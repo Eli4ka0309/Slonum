@@ -1,1 +1,327 @@
-body{margin:0 auto;width:100vw;max-width:1900px;height:100vh;font-size:19px;color:black;background-color:#FBFCFD}.container{margin:0 auto;max-width:1300px;padding:0 30px}.wrapper{margin:0 auto}.header{margin:0 auto;position:absolute;top:0;left:0;right:0;z-index:1000}.header_inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:35px}.logo_icon{width:9vw}.header_nav{display:-webkit-box;display:-ms-flexbox;display:flex;font-family:"Ubuntu",sans-serif;font-weight:800;font-size:18px}.nav_link{margin-left:20px}.nav_link:first-child{margin-left:0}.nav_link:after{content:"";display:block;width:100%;height:2px;background-color:#A8F000;z-index:100;opacity:0;-webkit-transition:opacity 0.2s linear;transition:opacity 0.2s linear}.nav_link:hover:after{opacity:1}.nav_link:active{color:#324600}.intro{position:absolute;top:0;left:0;right:0;z-index:1;margin:0 auto}.intro_inner{margin-top:231px;display:-webkit-box;display:-ms-flexbox;display:flex}.intro_item{width:60%}.intro_title{font-size:64px;font-weight:900;font-family:"Ubuntu",sans-serif}.intro_subtitle{margin-top:24px;font-size:36px;font-family:"Ubuntu",sans-serif;font-weight:200}.btm_item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;margin-top:54px}.intro_btm{padding:22px 59px;background-color:#A8F000;font-family:"Ubuntu",sans-serif;font-size:20px;font-weight:800;border:none;border-radius:50px}.intro_btm:hover{background-color:#9dde04}.intro_btm:active{background-color:#89c001}.intro_img{width:50%;margin-left:15px;position:absolute;top:121px;right:-39px;z-index:1;background-image:radial-gradient(circle closest-corner at 62% 54%,#0800ffd9 -35%,transparent 65%)}.img_rocket{width:100%}.timer{margin-left:43px;border-radius:50px;background-color:#FEF138;padding:15px 47px}.timer_title{font-family:"Ubuntu",sans-serif;font-size:20px;font-weight:800;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.timer_item{display:-webkit-box;display:-ms-flexbox;display:flex;font-family:"Ubuntu",sans-serif;font-size:20px;font-weight:900;margin-top:15px}.timer_days,.timer_hours,.timer_minutes{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:white;padding:20px 13px;border-radius:20px;margin-left:15px}.timer_days{margin-left:0}
+body {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1900px;
+  height: 100vh;
+  font-size: 19px;
+  color: #000000;
+  background-color: #FBFCFD;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 30px;
+}
+
+.article {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+
+.logo_icon {
+  width: 9vw;
+}
+
+.header_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.nav_link {
+  margin-left: 20px;
+}
+
+.nav_link:first-child {
+  margin-left: 0;
+}
+
+.nav_link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #A8F000;
+  z-index: 100;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.nav_link:hover:after {
+  opacity: 1;
+}
+
+.nav_link:active {
+  color: #324600;
+}
+
+.main {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.intro_inner {
+  margin-top: 231px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro_item {
+  width: 64%;
+}
+
+.intro_title {
+  font-size: 64px;
+  font-weight: 900;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.title_bg {
+  background: #A8F000;
+  border-radius: 50px;
+  padding: 5px 15px;
+  -webkit-box-shadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
+          box-shadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
+}
+
+.intro_subtitle {
+  margin-top: 34px;
+  font-size: 36px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+}
+
+.btm_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 70px;
+}
+
+.intro_btm {
+  padding: 22px 59px;
+  background-color: #A8F000;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
+          box-shadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
+}
+
+.intro_btm:hover {
+  background-color: #9dde04;
+}
+
+.intro_btm:active {
+  background-color: #89c001;
+}
+
+.intro_img {
+  display: block;
+  position: relative;
+  top: -85px;
+  left: -35px;
+  right: 0;
+  margin-left: 15px;
+  z-index: 1;
+  background-image: radial-gradient(circle closest-corner at 62% 54%, #0800ffd9 -35%, transparent 65%);
+}
+
+.timer {
+  margin-left: 43px;
+  border-radius: 50px;
+  background-color: #FEF138;
+  -webkit-box-shadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
+          box-shadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
+  padding: 22px 47px;
+}
+
+.timer_title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timer_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.timer_days,
+.timer_hours,
+.timer_minutes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  font-size: 22px;
+  padding: 20px 13px;
+  border-radius: 25px;
+  margin-left: 15px;
+}
+
+.timer_days {
+  margin-left: 0;
+}
+
+.section {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.section_header {
+  margin: 15px 0;
+}
+
+.section_title {
+  font-size: 34px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+}
+
+.card_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 73px;
+}
+
+.card_item {
+  background: rgba(89, 89, 89, 0);
+  -webkit-box-shadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
+          box-shadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
+  border-radius: 50px;
+  margin: 40px 12px;
+  padding: 77px 29px 25px;
+  width: 31%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.card_img {
+  position: absolute;
+  top: -59px;
+  left: 29px;
+  right: 0;
+  z-index: 10;
+}
+
+.card_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 21px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+.section_form {
+  margin: 0 auto;
+}
+
+.form_inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FEF138;
+  -webkit-box-shadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
+          box-shadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
+  border-radius: 50px;
+}
+
+.img_form {
+  width: 50%;
+}
