@@ -1,5 +1,7 @@
 $bgColor: #FEF138;
 $bgColorGrin: #A8F000;
+$bgHoverGreen: #9dde04;
+$bgActiveGreen: #88c900;
 $boxShadow: 15px 10px 30px rgba(128, 128, 128, 0.47);
 $bordRad: 50px;
 
@@ -11,6 +13,16 @@ body {
   font-size: 19px;
   color: #000000;
   background-color: #FBFCFD;
+
+
+}
+.wrapper{
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 //container//
@@ -83,7 +95,7 @@ body {
 }
 
 .nav_link:active {
-  color: #324600;
+  color: $bgActiveGreen;
 }
 
 .main {
@@ -98,7 +110,6 @@ body {
 //intro//
 .intro {
   width: 100vw;
-  height: 100vh;
   position: relative;
   margin: 0 auto;
   top: 0;
@@ -145,10 +156,10 @@ body {
 }
 
 .intro_btm {
-  padding: 22px 59px;
+  padding: 28px 59px;
   background-color: $bgColorGrin;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
   border: none;
   border-radius: $bordRad;
@@ -156,11 +167,11 @@ body {
 }
 
 .intro_btm:hover {
-  background-color: #9dde04;
+  background-color: $bgHoverGreen;
 }
 
 .intro_btm:active {
-  background-color: #89c001;
+  background-color: $bgActiveGreen;
 }
 
 .intro_img {
@@ -174,9 +185,6 @@ body {
   background-image: radial-gradient(circle closest-corner at 62% 54%, #0800ffd9 -35%, transparent 65%);
 }
 
-.img_rocket {
-
-}
 
 //time//
 .timer {
@@ -184,12 +192,12 @@ body {
   border-radius: $bordRad;
   background-color: $bgColor;
   box-shadow: $boxShadow;
-  padding: 22px 47px;
+  padding: 28px 59px;
 }
 
 .timer_title {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
   display: flex;
   justify-content: center;
@@ -228,6 +236,8 @@ body {
   z-index: 1;
   margin: 0 auto;
   width: 100vw;
+  background-image: radial-gradient(circle closest-corner at 64% 49%, #A8F00066 -28%, transparent 43%);
+
 }
 
 .section_header {
@@ -248,7 +258,7 @@ body {
 }
 
 .card_item {
-  background: rgb(89 89 89 / 0%);
+  background: white;
   box-shadow: $boxShadow;
   border-radius: $bordRad;
   margin: 40px 12px;
@@ -258,8 +268,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 50;
-
+  z-index: 2;
 }
 
 .card_img {
@@ -267,7 +276,7 @@ body {
   top: -59px;
   left: 29px;
   right: 0;
-  z-index: 10;
+  z-index: 3;
 }
 
 .card_text {
@@ -276,11 +285,15 @@ body {
   font-size: 21px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
+  z-index: 100;
 }
 
 //form//
+
 .section_form {
-  margin: 0 auto;
+  position: relative;
+  margin: 176px auto 30px;
+  background-image: none;
 }
 
 .form_inner {
@@ -289,15 +302,132 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  background:$bgColor;
+  background: $bgColor;
   box-shadow: $boxShadow;
   border-radius: $bordRad;
+  margin: auto 50px;
 }
-.form_img{
+
+.form_item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
+  margin: 0 25px;
 
 }
-.img_form{
-  width: 50%;
+
+.img_form {
+  position: absolute;
+  top: -138px;
+  left: -27px;
+  z-index: 10;
+  width: 35%;
 }
+
+.form_title {
+  font-size: 34px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
+  margin-top: 40px;
+  width: 66%;
+}
+
+.form_text {
+  background: $bgColorGrin;
+  background-position-x: 30%;
+  border-radius: $bordRad;
+  padding: 5px 15px;
+  box-shadow: $boxShadow;
+}
+
+.form_subtitle {
+  font-size: 23px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  margin-top: 35px;
+}
+
+form {
+  margin: 35px 0;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 15px;
+  background: $bgColor;
+  border: solid 2px rgba(0, 0, 0, 0.38);
+  border-radius: $bordRad;
+
+}
+
+input:hover {
+  border: 2px solid #9dde04;
+  background: #efe540;
+}
+
+#button {
+  font-size: 17px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
+
+  border: none;
+  padding: 13px 28px;
+  background: $bgColorGrin;
+}
+
+#button:hover {
+  background-color: $bgHoverGreen;
+}
+
+#button:active {
+  background-color: #89c001;
+}
+
+.checkbox {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  margin-top: 15px;
+  font-size: 18px;
+}
+//section_form//
+.section_about{
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+.about_inner{
+  background-image: url("/img/about/about_bg.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.about_num{
+  border-radius: 50%;
+  background: $bgColor;
+  font-size: 31px;
+  font-weight: 900 ;
+}
+
+.about_title{
+  font-size: 22px;
+  font-weight: 900;
+}
+.about_subtitle{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
