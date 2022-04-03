@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Slonum</title>
+    <script src="https://kit.fontawesome.com/fe8dcd720c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="scss/style.scss">
+
 </head>
 <body>
 <div class="wrapper">
@@ -98,9 +100,11 @@
                         </div>
                         <div class="form_subtitle">Заполни форму и мы свяжемся с тобой в ближайшее время</div>
                         <form>
-                            <input type="text" id="name" placeholder="Имя">
-                            <input type="text" id="email" placeholder="Email">
-                            <input type="button" id="button" value="Отправить">
+                            <label>
+                                <input type="text" id="name" placeholder="Имя">
+                                <input type="text" id="email" placeholder="Email">
+                                <input type="button" id="button" value="Отправить">
+                            </label>
                         </form>
                         <label class="checkbox">
                             <input class="scale" type="checkbox" name="checkbox" id="scale" checked>
@@ -203,7 +207,44 @@
                 </div>
             </div>
         </section>
-    </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_item">
+                        <div class="form_title footer_title">
+                            <span class="form_text footer_text">Узнавай</span>
+                            первым о старте олимпиад
+                        </div>
+                        <div class="form_subtitle footer_subtitle">Оформи подписку, чтобы получать полезные материалы и
+                            не пропустить
+                            ни
+                            одной олимпиады
+                        </div>
+                        <form class="footer_form">
+                            <label>
+                                <input type="text" id="footer_name" placeholder="Имя">
+                                <input type="text" id="footer_email" placeholder="Email">
+                                <input type="button" id="footer_button" value="Отправить">
+                            </label>
+                        </form>
+                        <label class="checkbox">
+                            <input class="scale" type="checkbox" name="checkbox" id="footer_scale" checked>
+                            <span class="checkbox_txt">Даю согласие на обработку данных</span>
+                        </label>
+                    </div>
+                    <img src="/img/footer/footer_img.svg" alt="fire" class="footer_img">
+                    <div class="social">
+                        <a><i class="fa-brands fa-facebook-f"></i></a>
+                        <i class="fa-brands fa-twitter-square"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-facebook-square"></i>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+            </div>
+</div>
+</footer>
+</main>
 </div>
 </body>
 </html>
