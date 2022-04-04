@@ -313,6 +313,14 @@ body {
   margin: auto 50px;
 }
 
+.img_form {
+  position: absolute;
+  top: -138px;
+  left: -27px;
+  z-index: 10;
+  width: 35%;
+}
+
 .form_item {
   display: flex;
   flex-wrap: wrap;
@@ -320,14 +328,6 @@ body {
   align-content: flex-end;
   margin: 0 25px;
 
-}
-
-.img_form {
-  position: absolute;
-  top: -138px;
-  left: -27px;
-  z-index: 10;
-  width: 35%;
 }
 
 .form_title {
@@ -358,36 +358,59 @@ form {
   margin: 25px 0 15px;
 }
 
-input {
+.name {
   font-size: 18px;
   padding: 10px 15px;
-  background: $bgColorYellow;
-  border: solid 2px rgba(0, 0, 0, 0.38);
+  background: #f6e93e;
+  box-shadow:$boxShadow ;
+  border: 2px solid rgba(148, 138, 14, 0.84);
   border-radius: $bordRad;
-
 }
 
-input:hover {
-  border: 2px solid #9dde04;
-  background: #efe540;
+.name:hover {
+  border: 2px solid rgba(138, 127, 14, 0.84);
+  background: #f1e436;
 }
 
-#button {
+.name:active {
+  background: #e3d632;
+}
+
+.email {
+  font-size: 18px;
+  padding: 10px 15px;
+  background: #f6e93e;
+  box-shadow:$boxShadow ;
+  border: 2px solid rgba(148, 138, 14, 0.84);
+  border-radius: $bordRad;
+}
+
+.email:hover {
+  border: 2px solid rgba(138, 127, 14, 0.84);
+  background: #f1e436;
+}
+
+.email:active {
+  background: #e3d632;
+}
+
+.button {
   font-size: 17px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 900;
-
-  border: none;
+  border-radius: $bordRad;
+  box-shadow:$boxShadow ;
+  border: 2px solid $bgColorGrin ;
   padding: 13px 28px;
   background: $bgColorGrin;
 }
 
-#button:hover {
+.button:hover {
   background-color: $bgHoverGreen;
 }
 
-#button:active {
-  background-color: #89c001;
+.button:active {
+  background-color: #98d701;
 }
 
 label {
@@ -535,7 +558,14 @@ label {
   top: 0;
   right: 0;
   z-index: 1;
+}
 
+.section_vector:hover {
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.section_vector:active {
+  background: rgba(0, 0, 0, 0.34);
 }
 
 .section_vector:before {
@@ -546,9 +576,8 @@ label {
   width: 4px;
   height: 20px;
   background: #000000B2;
-
-
 }
+
 
 .section_vector:after {
   content: "";
@@ -596,12 +625,12 @@ label {
 
 .footer_inner {
   margin: 0 25px;
-  padding: 0 25px ;
-  border-radius: 30px;
+  padding: 0 50px;
+  border-radius: 30px 30px 0px 0px;
   box-shadow: $boxShadow;
   background: #a8f000c2;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
   top: 0;
   left: 0;
@@ -618,43 +647,108 @@ label {
 
 }
 
-.footer_title{
+.footer_title {
   margin-top: 60px;
   width: 100%;
 
 }
 
-.footer_subtitle{
+.footer_subtitle {
   margin-top: 37px;
   width: 70%;
 
 }
 
-.footer_text{
-  background:$bgColorYellow;
-
-}
-.footer_form{
-  margin: 36px 0 18px;
-
+.footer_text {
+  background: $bgColorYellow;
 }
 
-#footer_email, #footer_name{
-  background: #ddff8e7a;
+.footer_form {
+  margin: 36px 0 35px;
 }
 
-.footer_img{
+.footer_name {
+  font-size: 18px;
+  padding: 10px 15px;
+  background: #b8eb59;
+  box-shadow:$boxShadow ;
+  border: 2px solid rgb(125, 159, 56);
+  border-radius: $bordRad;
+
+}
+
+.footer_name:hover {
+  background: #b3e851;
+  border: 2px solid rgb(103, 129, 46);
+}
+
+.footer_name:active {
+  background: #a9da4d;
+  border: 2px solid rgb(76, 96, 34);
+}
+
+.footer_email {
+  font-size: 18px;
+  padding: 10px 15px;
+  background: #b8eb59;
+  box-shadow:$boxShadow ;
+  border: 2px solid rgb(125, 159, 56);
+  border-radius: $bordRad;
+
+}
+
+.footer_email:hover {
+  background: #b3e851;
+  border: 2px solid rgb(103, 129, 46);
+}
+
+.footer_email:active {
+  background: #a9da4d;
+  border: 2px solid rgb(76, 96, 34);
+}
+.footer_btn{
+  font-size: 17px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
+  border-radius: $bordRad;
+  box-shadow:$boxShadow ;
+  border: 2px solid rgba(241, 220, 22, 0.84);
+  padding: 13px 28px;
+  background: $bgColorYellow;
+}
+
+
+
+.footer_img {
   display: block;
   position: absolute;
-  top: -116px;
-  right: -74px;
+  top: -159px;
+  right: -56px;
 
 }
-.social{
+
+.social {
   display: flex;
   align-items: flex-end;
-  padding: 15px 0;
+  padding-bottom: 35px;
 }
+
+.fab {
+  font-size: 34px;
+  padding-left: 15px;
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.fab:hover {
+  color: rgba(0, 0, 0, 0.81);
+}
+
+.fab:active {
+  color: black;
+}
+
+
+
 
 
 
