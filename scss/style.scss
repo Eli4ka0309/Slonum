@@ -1,8 +1,10 @@
-$bgColorYellow: #FEF138;
+$bgColorYellow: #ffef3a;
 $bgColorGrin: #A8F000;
 $bgHoverGreen: #9dde04;
 $bgActiveGreen: #88c900;
-$boxShadow: 12px 10px 37px rgb(128 128 128 / 47%);
+$boxShadowGrey: 12px 10px 37px rgb(128 128 128 / 47%);
+$boxShadowGrin: 12px 10px 37px rgb(21 86 11 / 36%);
+$boxShadowYellow: 12px 10px 37px #b9ae27b3;
 $bordRad: 50px;
 
 
@@ -31,7 +33,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1300px;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 
 .article {
@@ -119,7 +121,7 @@ body {
   right: 0;
   z-index: 1;
   background: radial-gradient(circle closest-corner at 23% 44%, #FEF138 -20%, transparent 73%);
-
+  overflow: hidden;
 
 }
 
@@ -144,7 +146,7 @@ body {
   background: $bgColorGrin;
   border-radius: $bordRad;
   padding: 5px 15px;
-  box-shadow: $boxShadow;
+  box-shadow: $boxShadowGrey;
 }
 
 .intro_subtitle {
@@ -168,7 +170,8 @@ body {
   font-weight: 800;
   border: none;
   border-radius: $bordRad;
-  box-shadow: $boxShadow;
+  box-shadow: $boxShadowGrey;
+  transition: 0.2s;
 }
 
 .intro_btm:hover {
@@ -196,7 +199,7 @@ body {
   margin-left: 43px;
   border-radius: $bordRad;
   background-color: $bgColorYellow;
-  box-shadow: $boxShadow;
+  box-shadow: $boxShadowGrey;
   padding: 28px 59px;
 }
 
@@ -226,6 +229,7 @@ body {
   padding: 20px 13px;
   border-radius: 25px;
   margin-left: 15px;
+  box-shadow: $boxShadowYellow;
 }
 
 .timer_days {
@@ -265,7 +269,7 @@ body {
 
 .card_item {
   background: white;
-  box-shadow: $boxShadow;
+  box-shadow: $boxShadowGrey;
   border-radius: $bordRad;
   margin: 40px 12px;
   padding: 77px 29px 25px;
@@ -308,7 +312,7 @@ body {
   right: 0;
   z-index: 1;
   background: $bgColorYellow;
-  box-shadow: $boxShadow;
+  box-shadow: $boxShadowGrey;
   border-radius: $bordRad;
   margin: auto 50px;
 }
@@ -343,7 +347,7 @@ body {
   background-position-x: 30%;
   border-radius: $bordRad;
   padding: 5px 15px;
-  box-shadow: $boxShadow;
+  box-shadow: $boxShadowGrin;
 
 }
 
@@ -362,7 +366,7 @@ form {
   font-size: 18px;
   padding: 10px 15px;
   background: #f6e93e;
-  box-shadow:$boxShadow ;
+  box-shadow: $boxShadowYellow;
   border: 2px solid rgba(148, 138, 14, 0.84);
   border-radius: $bordRad;
 }
@@ -380,7 +384,7 @@ form {
   font-size: 18px;
   padding: 10px 15px;
   background: #f6e93e;
-  box-shadow:$boxShadow ;
+  box-shadow: $boxShadowYellow;
   border: 2px solid rgba(148, 138, 14, 0.84);
   border-radius: $bordRad;
 }
@@ -399,18 +403,21 @@ form {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 900;
   border-radius: $bordRad;
-  box-shadow:$boxShadow ;
-  border: 2px solid $bgColorGrin ;
+  box-shadow: $boxShadowYellow;
+  border: 2px solid $bgColorGrin;
   padding: 13px 28px;
   background: $bgColorGrin;
 }
 
 .button:hover {
   background-color: $bgHoverGreen;
+  transition: 0.2s;
 }
 
 .button:active {
   background-color: #98d701;
+  transition: 0.2s;
+
 }
 
 label {
@@ -484,6 +491,7 @@ label {
   font-family: 'Ubuntu', sans-serif;
   border-radius: 50%;
   background: $bgColorYellow;
+  box-shadow: $boxShadowGrey;
   font-size: 28px;
   font-weight: 900;
   padding: 16px 27px;
@@ -553,7 +561,7 @@ label {
   height: 40px;
   background: #ffffff;
   border-radius: $bordRad;
-  box-shadow: $boxShadow;
+  box-shadow: $boxShadowGrey;
   position: relative;
   top: 0;
   right: 0;
@@ -627,7 +635,7 @@ label {
   margin: 0 25px;
   padding: 0 50px;
   border-radius: 30px 30px 0px 0px;
-  box-shadow: $boxShadow;
+  box-shadow: $boxShadowGrey;
   background: #a8f000c2;
   display: flex;
   justify-content: space-between;
@@ -671,7 +679,7 @@ label {
   font-size: 18px;
   padding: 10px 15px;
   background: #b8eb59;
-  box-shadow:$boxShadow ;
+  box-shadow: $boxShadowGrin;
   border: 2px solid rgb(125, 159, 56);
   border-radius: $bordRad;
 
@@ -691,7 +699,7 @@ label {
   font-size: 18px;
   padding: 10px 15px;
   background: #b8eb59;
-  box-shadow:$boxShadow ;
+  box-shadow: $boxShadowGrin;
   border: 2px solid rgb(125, 159, 56);
   border-radius: $bordRad;
 
@@ -700,23 +708,37 @@ label {
 .footer_email:hover {
   background: #b3e851;
   border: 2px solid rgb(103, 129, 46);
+  outline: none;
 }
 
 .footer_email:active {
   background: #a9da4d;
   border: 2px solid rgb(76, 96, 34);
+  outline: none;
+
 }
-.footer_btn{
+
+.footer_btn {
   font-size: 17px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 900;
   border-radius: $bordRad;
-  box-shadow:$boxShadow ;
+  box-shadow: $boxShadowGrin;
   border: 2px solid rgba(241, 220, 22, 0.84);
   padding: 13px 28px;
   background: $bgColorYellow;
 }
 
+.footer_btn:hover {
+  background: #f3e337;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.footer_btn:active {
+  background: #ead936;
+
+}
 
 
 .footer_img {
