@@ -32,7 +32,8 @@ body {
 //container//
 .container {
   margin: 0 auto;
-  max-width: 1300px;
+  width: 100%;
+  max-width: 1380px;
   padding: 0 40px;
 }
 
@@ -132,7 +133,6 @@ body {
 }
 
 .intro_item {
-  width: 64%;
 }
 
 .intro_title {
@@ -184,11 +184,11 @@ body {
 
 .intro_img {
   display: block;
+  width: 100%;
   position: relative;
   top: -85px;
-  left: -35px;
+  left: -45px;
   right: 0;
-  margin-left: 15px;
   z-index: 1;
   background-image: radial-gradient(circle closest-corner at 62% 54%, #0800ffd9 -35%, transparent 65%);
 }
@@ -453,9 +453,10 @@ label {
 .about_inner {
   background-image: url("/img/about/about_bg.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
-  padding: 80px 23px;
+  padding: 30px 0;
 }
 
 .about_item_1 {
@@ -503,19 +504,13 @@ label {
   font-family: 'Ubuntu', sans-serif;
   font-size: 22px;
   font-weight: 900;
+  margin-top: 16px;
 }
 
 .about_subtitle {
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
   font-weight: 300;
-}
-
-.about_title {
-  margin-top: 16px;
-}
-
-.about_subtitle {
   margin-top: 11px;
 }
 
@@ -538,7 +533,6 @@ label {
 }
 
 .accordion_item {
-  margin-bottom: 15px;
   border-bottom: 1px solid #000000;
 }
 
