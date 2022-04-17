@@ -1,6 +1,5 @@
 body {
   margin: 0 auto;
-  width: 100vw;
   max-width: 1900px;
   height: 100vh;
   font-size: 19px;
@@ -106,25 +105,22 @@ body {
 }
 
 .intro {
-  width: 100vw;
-  position: relative;
-  margin: 0 auto;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 1;
   background: radial-gradient(circle closest-corner at 23% 44%, #FEF138 -20%, transparent 73%);
   overflow: hidden;
 }
 
+.intro_item {
+  width: 60%;
+}
+
 .intro_inner {
-  padding-top: 231px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 231px 0 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .intro_title {
@@ -137,8 +133,8 @@ body {
   background: #A8F000;
   border-radius: 50px;
   padding: 5px 15px;
-  -webkit-box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
-          box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
+  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
 }
 
 .intro_subtitle {
@@ -166,8 +162,8 @@ body {
   font-weight: 800;
   border: none;
   border-radius: 50px;
-  -webkit-box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
-          box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
+  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -182,12 +178,14 @@ body {
 
 .intro_img {
   display: block;
-  width: 100%;
-  position: relative;
-  top: -85px;
-  left: -45px;
-  right: 0;
+  position: absolute;
+  top: 91px;
+  right: -119px;
   z-index: 1;
+}
+
+.img_rocket {
+  width: 70%;
   background-image: radial-gradient(circle closest-corner at 62% 54%, #0800ffd9 -35%, transparent 65%);
 }
 
@@ -195,9 +193,9 @@ body {
   margin-left: 43px;
   border-radius: 50px;
   background-color: #ffef3a;
-  -webkit-box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
-          box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
-  padding: 28px 59px;
+  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+  padding: 28px 39px;
 }
 
 .timer_title {
@@ -216,43 +214,50 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   font-weight: 900;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .timer_days,
 .timer_hours,
 .timer_minutes {
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: white;
   font-size: 22px;
-  padding: 20px 13px;
+  padding: 12px 13px;
   border-radius: 25px;
   margin-left: 15px;
-  -webkit-box-shadow: 12px 10px 37px #b9ae27b3;
-          box-shadow: 12px 10px 37px #b9ae27b3;
+  -webkit-box-shadow: 12px 10px 37px #b9ae275c;
+          box-shadow: 12px 10px 37px #b9ae275c;
 }
 
 .timer_days {
   margin-left: 0;
 }
 
-.section {
+.section_advant {
+  margin: 0 auto;
   position: relative;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-  margin: 0 auto;
   padding: 40px 0 160px;
-  width: 100vw;
   background: radial-gradient(circle closest-corner at 47% 56%, #A8F00066 -8%, transparent 54%);
 }
 
@@ -280,8 +285,8 @@ body {
 
 .card_item {
   background: white;
-  -webkit-box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
-          box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
+  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   border-radius: 50px;
   margin: 40px 12px;
   padding: 77px 29px 25px;
@@ -316,7 +321,10 @@ body {
 
 .section_form {
   position: relative;
-  margin: 0 auto 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .form_inner {
@@ -326,8 +334,8 @@ body {
   right: 0;
   z-index: 1;
   background: #ffef3a;
-  -webkit-box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
-          box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
+  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   border-radius: 50px;
   margin: auto 50px;
 }
@@ -368,8 +376,8 @@ body {
   background-position-x: 30%;
   border-radius: 50px;
   padding: 5px 15px;
-  -webkit-box-shadow: 12px 10px 37px rgba(21, 86, 11, 0.36);
-          box-shadow: 12px 10px 37px rgba(21, 86, 11, 0.36);
+  -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
+          box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
 }
 
 .form_subtitle {
@@ -387,8 +395,8 @@ form {
   font-size: 18px;
   padding: 10px 15px;
   background: #f6e93e;
-  -webkit-box-shadow: 12px 10px 37px #b9ae27b3;
-          box-shadow: 12px 10px 37px #b9ae27b3;
+  -webkit-box-shadow: 12px 10px 37px #b9ae275c;
+          box-shadow: 12px 10px 37px #b9ae275c;
   border: 2px solid rgba(148, 138, 14, 0.84);
   border-radius: 50px;
 }
@@ -406,8 +414,8 @@ form {
   font-size: 18px;
   padding: 10px 15px;
   background: #f6e93e;
-  -webkit-box-shadow: 12px 10px 37px #b9ae27b3;
-          box-shadow: 12px 10px 37px #b9ae27b3;
+  -webkit-box-shadow: 12px 10px 37px #b9ae275c;
+          box-shadow: 12px 10px 37px #b9ae275c;
   border: 2px solid rgba(148, 138, 14, 0.84);
   border-radius: 50px;
 }
@@ -426,8 +434,8 @@ form {
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
   border-radius: 50px;
-  -webkit-box-shadow: 12px 10px 37px #b9ae27b3;
-          box-shadow: 12px 10px 37px #b9ae27b3;
+  -webkit-box-shadow: 12px 10px 37px #b9ae275c;
+          box-shadow: 12px 10px 37px #b9ae275c;
   border: 2px solid #A8F000;
   padding: 13px 28px;
   background: #A8F000;
@@ -462,14 +470,13 @@ label {
 }
 
 .section_about {
+  margin: 0 auto;
   position: relative;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: 1;
-  margin: 0 auto;
-  width: 100vw;
   padding-top: 128px;
   background: radial-gradient(circle closest-corner at 35% 50%, #A8F00066 -9%, transparent 69%);
 }
@@ -539,8 +546,8 @@ label {
   font-family: "Ubuntu", sans-serif;
   border-radius: 50%;
   background: #ffef3a;
-  -webkit-box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
-          box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
+  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   font-size: 28px;
   font-weight: 900;
   padding: 16px 27px;
@@ -567,8 +574,8 @@ label {
   right: 0;
   z-index: 1;
   margin: 0 auto;
-  padding: 50px 0 100px;
-  background: radial-gradient(circle closest-corner at 57% 79%, #FEF138 -50%, transparent 62%);
+  padding: 50px 0 180px;
+  background: radial-gradient(circle closest-corner at 46% 65%, #FEF138 -39%, transparent 62%);
 }
 
 .accordion {
@@ -604,8 +611,8 @@ label {
   height: 40px;
   background: #ffffff;
   border-radius: 50px;
-  -webkit-box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
-          box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
+  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   position: relative;
   top: 0;
   right: 0;
@@ -675,8 +682,8 @@ label {
   margin: 0 25px;
   padding: 0 50px;
   border-radius: 30px 30px 0px 0px;
-  -webkit-box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
-          box-shadow: 12px 10px 37px rgba(128, 128, 128, 0.47);
+  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   background: #a8f000c2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,8 +726,8 @@ label {
   font-size: 18px;
   padding: 10px 15px;
   background: #b8eb59;
-  -webkit-box-shadow: 12px 10px 37px rgba(21, 86, 11, 0.36);
-          box-shadow: 12px 10px 37px rgba(21, 86, 11, 0.36);
+  -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
+          box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
   border: 2px solid #7d9f38;
   border-radius: 50px;
 }
@@ -739,8 +746,8 @@ label {
   font-size: 18px;
   padding: 10px 15px;
   background: #b8eb59;
-  -webkit-box-shadow: 12px 10px 37px rgba(21, 86, 11, 0.36);
-          box-shadow: 12px 10px 37px rgba(21, 86, 11, 0.36);
+  -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
+          box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
   border: 2px solid #7d9f38;
   border-radius: 50px;
 }
@@ -762,8 +769,8 @@ label {
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
   border-radius: 50px;
-  -webkit-box-shadow: 12px 10px 37px rgba(21, 86, 11, 0.36);
-          box-shadow: 12px 10px 37px rgba(21, 86, 11, 0.36);
+  -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
+          box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
   border: 2px solid rgba(241, 220, 22, 0.84);
   padding: 13px 28px;
   background: #ffef3a;

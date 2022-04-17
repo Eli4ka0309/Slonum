@@ -1,7 +1,7 @@
 @media (max-width: 1380px ) {
+    /*intro*/
     .intro_inner {
         padding-top: 202px;
-        height: 80vh;
     }
 
     .intro_title {
@@ -25,10 +25,10 @@
     .timer {
         font-size: 20px;
         margin-left: 33px;
-        padding: 24px 53px;
     }
-    .section{
-        padding: 24px 0 124px;
+
+    .section {
+        padding: 24px 0 158px;
     }
 
     .section_title {
@@ -40,97 +40,116 @@
     }
 
 
-    .form_inner{
+    .form_inner {
         margin: auto 80px;
     }
-    .img_form{
-        top: -138px;
-        width: 34%;
+
+    .img_form {
+        top: -132px;
+        width: 33%;
+        left: 6px;
     }
-    .form_title{
-        margin-top: 25px;
+
+    .form_title {
+        margin-top: 35px;
         font-size: 32px;
     }
-    .form_subtitle{
+
+    .form_subtitle {
         font-size: 21px;
     }
+
     form {
         margin: 13px 0 13px;
     }
-    .name, .email, .button{
+
+    .name, .email, .button {
         font-size: 16px;
     }
-    label{
-        margin-bottom: 25px;
+
+    label {
+        margin-bottom: 35px;
     }
 
-    .section_about{
-        padding-top: 61px;
+    .section_about {
+        padding-top: 130px;
     }
-    .about_num{
+
+    .about_num {
         font-size: 24px;
         padding: 15px 24px;
     }
+
     .about_title {
         margin-top: 11px;
         font-size: 20px;
     }
-    .about_subtitle{
+
+    .about_subtitle {
         margin-top: 7px;
         font-size: 18px;
     }
-    .section_header{
-        padding: 19px 0 23px;
+
+    .section_header {
+        padding: 0 0 50px;
     }
+
     .accordion {
         margin: 0 70px;
     }
-    .accordion_title{
+
+    .accordion_title {
         font-size: 22px;
     }
-    .accordion_content{
+
+    .accordion_content {
         padding: 0 37px 16px;
     }
-    .section_vector{
+
+    .section_vector {
         width: 36px;
         height: 36px;
     }
-    .section_vector:before{
+
+    .section_vector:before {
         top: 9px;
         right: 16px;
         width: 4px;
         height: 18px;
     }
-    .section_vector:after{
+
+    .section_vector:after {
         top: 16px;
         right: 9px;
         width: 18px;
         height: 4px;
     }
 
-    .section_info{
-        padding: 50px 0 189px;
+    .section_info {
+        padding: 141px 0 223px;
     }
-    .footer_inner{
+
+    .footer_inner {
         margin: 0 80px;
         padding: 0 70px;
     }
 
-    .footer_subtitle{
+    .footer_subtitle {
         margin-top: 27px;
     }
+
     .footer_form {
         margin: 23px 0 23px;
     }
-    .footer_img{
+
+    .footer_img {
         top: -192px;
         right: -15px;
         width: 37%;
     }
+
     .fab {
         font-size: 31px;
         padding-left: 13px;
     }
-
-
 }
