@@ -83,8 +83,6 @@ body {
   background-color: #A8F000;
   z-index: 100;
   opacity: 0;
-  -webkit-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
 }
 
 .nav_link:hover:after {
@@ -93,6 +91,14 @@ body {
 
 .nav_link:active {
   color: #88c900;
+}
+
+#sign_in:after {
+  background-color: #d53940;
+}
+
+#sign_in:active {
+  color: #d53940;
 }
 
 .main {
@@ -131,10 +137,8 @@ body {
 
 .title_bg {
   background: #A8F000;
-  border-radius: 50px;
+  border-radius: 40px;
   padding: 5px 15px;
-  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
 }
 
 .intro_subtitle {
@@ -155,13 +159,13 @@ body {
 }
 
 .intro_btm {
-  padding: 28px 59px;
+  padding: 21px 75px;
   background-color: #A8F000;
   font-family: "Ubuntu", sans-serif;
   font-size: 22px;
   font-weight: 800;
   border: none;
-  border-radius: 50px;
+  border-radius: 40px;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   -webkit-transition: 0.2s;
@@ -179,23 +183,23 @@ body {
 .intro_img {
   display: block;
   position: absolute;
-  top: 91px;
-  right: -119px;
+  top: 125px;
+  right: -220px;
   z-index: 1;
 }
 
 .img_rocket {
-  width: 70%;
+  width: 80%;
   background-image: radial-gradient(circle closest-corner at 62% 54%, #0800ffd9 -35%, transparent 65%);
 }
 
 .timer {
   margin-left: 43px;
-  border-radius: 50px;
+  border-radius: 40px;
   background-color: #ffef3a;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-  padding: 28px 39px;
+  padding: 21px 39px;
 }
 
 .timer_title {
@@ -287,15 +291,12 @@ body {
   background: white;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-  border-radius: 50px;
+  border-radius: 40px;
   margin: 40px 12px;
   padding: 77px 29px 25px;
   width: 31%;
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 .card_img {
@@ -307,12 +308,6 @@ body {
 }
 
 .card_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 21px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -336,7 +331,7 @@ body {
   background: #ffef3a;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-  border-radius: 50px;
+  border-radius: 40px;
   margin: auto 50px;
 }
 
@@ -372,12 +367,11 @@ body {
 }
 
 .form_text {
-  background: #A8F000;
-  background-position-x: 30%;
-  border-radius: 50px;
+  background-color: #A8F000;
+  border-radius: 40px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   padding: 5px 15px;
-  -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
-          box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
 }
 
 .form_subtitle {
@@ -398,7 +392,7 @@ form {
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
   border: 2px solid rgba(148, 138, 14, 0.84);
-  border-radius: 50px;
+  border-radius: 40px;
 }
 
 .name:hover {
@@ -417,7 +411,7 @@ form {
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
   border: 2px solid rgba(148, 138, 14, 0.84);
-  border-radius: 50px;
+  border-radius: 40px;
 }
 
 .email:hover {
@@ -433,7 +427,7 @@ form {
   font-size: 17px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
-  border-radius: 50px;
+  border-radius: 40px;
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
   border: 2px solid #A8F000;
@@ -484,12 +478,12 @@ label {
 .about_inner {
   background-image: url("/img/about/about_bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (2fr)[4];
   grid-template-columns: repeat(4, 2fr);
   padding: 30px 0;
+  margin: 0 30px;
 }
 
 .about_item_1 {
@@ -546,8 +540,6 @@ label {
   font-family: "Ubuntu", sans-serif;
   border-radius: 50%;
   background: #ffef3a;
-  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   font-size: 28px;
   font-weight: 900;
   padding: 16px 27px;
@@ -609,8 +601,9 @@ label {
 .section_vector {
   width: 40px;
   height: 40px;
+  padding: 7px;
   background: #ffffff;
-  border-radius: 50px;
+  border-radius: 40px;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   position: relative;
@@ -627,26 +620,6 @@ label {
   background: rgba(0, 0, 0, 0.34);
 }
 
-.section_vector:before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 18px;
-  width: 4px;
-  height: 20px;
-  background: #000000B2;
-}
-
-.section_vector:after {
-  content: "";
-  position: absolute;
-  top: 18px;
-  right: 10px;
-  width: 20px;
-  height: 4px;
-  background: rgba(0, 0, 0, 0.75);
-}
-
 .accordion_content {
   display: none;
   font-size: 18px;
@@ -659,14 +632,13 @@ label {
   display: block;
 }
 
-.active .section_vector::before {
-  -webkit-transform: translateX(1px) rotate(45deg);
-          transform: translateX(1px) rotate(45deg);
+.active .section_vector {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
-.active .section_vector::after {
-  -webkit-transform: translateX(1px) rotate(45deg);
-          transform: translateX(1px) rotate(45deg);
+.vector {
+  width: 100%;
 }
 
 .footer {
@@ -679,18 +651,18 @@ label {
 }
 
 .footer_inner {
-  margin: 0 25px;
+  margin: 0 70px;
   padding: 0 50px;
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 30px 30px 0 0;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   background: #a8f000c2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   top: 0;
   left: 0;
@@ -722,17 +694,23 @@ label {
   margin: 36px 0 35px;
 }
 
-.footer_name {
+.footer_name,
+.footer_email {
   font-size: 18px;
   padding: 10px 15px;
   background: #b8eb59;
   -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
           box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
   border: 2px solid #7d9f38;
-  border-radius: 50px;
+  border-radius: 40px;
 }
 
 .footer_name:hover {
+  background: #b3e851;
+  border: 2px solid #67812e;
+}
+
+.footer_email:hover {
   background: #b3e851;
   border: 2px solid #67812e;
 }
@@ -742,36 +720,19 @@ label {
   border: 2px solid #4c6022;
 }
 
-.footer_email {
-  font-size: 18px;
-  padding: 10px 15px;
-  background: #b8eb59;
-  -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
-          box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
-  border: 2px solid #7d9f38;
-  border-radius: 50px;
-}
-
-.footer_email:hover {
-  background: #b3e851;
-  border: 2px solid #67812e;
-  outline: none;
-}
-
 .footer_email:active {
   background: #a9da4d;
   border: 2px solid #4c6022;
-  outline: none;
 }
 
 .footer_btn {
   font-size: 17px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
-  border-radius: 50px;
+  border-radius: 40px;
   -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
           box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
-  border: 2px solid rgba(241, 220, 22, 0.84);
+  border: 2px solid #FFEF3AFF;
   padding: 13px 28px;
   background: #ffef3a;
 }
@@ -789,8 +750,9 @@ label {
 .footer_img {
   display: block;
   position: absolute;
-  top: -159px;
+  top: -72px;
   right: -56px;
+  height: 100%;
 }
 
 .social {

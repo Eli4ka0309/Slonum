@@ -5,7 +5,7 @@ $bgActiveGreen: #88c900;
 $boxShadowGrey: 0px 8px 65px rgb(128 128 128 / 41%);
 $boxShadowGrin: 0px 10px 37px rgb(21 86 11 / 26%);
 $boxShadowYellow: 12px 10px 37px #b9ae275c;
-$bordRad: 50px;
+$bordRad: 40px;
 
 
 body {
@@ -91,7 +91,6 @@ body {
   background-color: $bgColorGrin;
   z-index: 100;
   opacity: 0;
-  transition: opacity 0.2s linear;
 }
 
 .nav_link:hover:after {
@@ -100,6 +99,12 @@ body {
 
 .nav_link:active {
   color: $bgActiveGreen;
+}
+#sign_in:after{
+  background-color: #d53940;
+}
+#sign_in:active{
+  color:  #d53940;
 }
 
 .main {
@@ -118,7 +123,8 @@ body {
   overflow: hidden;
 
 }
-.intro_item{
+
+.intro_item {
   width: 60%;
 }
 
@@ -143,7 +149,6 @@ body {
   background: $bgColorGrin;
   border-radius: $bordRad;
   padding: 5px 15px;
-  box-shadow: $boxShadowGrey;
 }
 
 .intro_subtitle {
@@ -160,7 +165,7 @@ body {
 }
 
 .intro_btm {
-  padding: 28px 59px;
+  padding: 21px 75px;
   background-color: $bgColorGrin;
   font-family: 'Ubuntu', sans-serif;
   font-size: 22px;
@@ -182,12 +187,13 @@ body {
 .intro_img {
   display: block;
   position: absolute;
-  top: 91px;
-  right: -119px;
+  top: 125px;
+  right: -220px;
   z-index: 1;
 }
-.img_rocket{
-  width: 70%;
+
+.img_rocket {
+  width: 80%;
   background-image: radial-gradient(circle closest-corner at 62% 54%, #0800ffd9 -35%, transparent 65%);
 }
 
@@ -198,7 +204,7 @@ body {
   border-radius: $bordRad;
   background-color: $bgColorYellow;
   box-shadow: $boxShadowGrey;
-  padding: 28px 39px;
+  padding: 21px 39px;
 }
 
 .timer_title {
@@ -275,11 +281,9 @@ body {
   padding: 77px 29px 25px;
   width: 31%;
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
+  z-index: 1;
 }
+
 
 .card_img {
   position: absolute;
@@ -290,8 +294,6 @@ body {
 }
 
 .card_text {
-  display: flex;
-  justify-content: center;
   font-size: 21px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
@@ -346,12 +348,10 @@ body {
 }
 
 .form_text {
-  background: $bgColorGrin;
-  background-position-x: 30%;
+  background-color: $bgColorGrin;
   border-radius: $bordRad;
+  transform: rotate(45deg);
   padding: 5px 15px;
-  box-shadow: $boxShadowGrin;
-
 }
 
 .form_subtitle {
@@ -455,10 +455,11 @@ label {
 .about_inner {
   background-image: url("/img/about/about_bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   padding: 30px 0;
+  margin: 0 30px;
+
 }
 
 .about_item_1 {
@@ -494,7 +495,6 @@ label {
   font-family: 'Ubuntu', sans-serif;
   border-radius: 50%;
   background: $bgColorYellow;
-  box-shadow: $boxShadowGrey;
   font-size: 28px;
   font-weight: 900;
   padding: 16px 27px;
@@ -554,6 +554,7 @@ label {
 .section_vector {
   width: 40px;
   height: 40px;
+  padding: 7px;
   background: #ffffff;
   border-radius: $bordRad;
   box-shadow: $boxShadowGrey;
@@ -571,28 +572,6 @@ label {
   background: rgba(0, 0, 0, 0.34);
 }
 
-.section_vector:before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 18px;
-  width: 4px;
-  height: 20px;
-  background: #000000B2;
-}
-
-
-.section_vector:after {
-  content: "";
-  position: absolute;
-  top: 18px;
-  right: 10px;
-  width: 20px;
-  height: 4px;
-  background: rgba(0, 0, 0, 0.75);
-
-
-}
 
 .accordion_content {
   display: none;
@@ -606,15 +585,13 @@ label {
   display: block;
 }
 
-.active .section_vector::before {
-  transform: translateX(1px) rotate(45deg);
+.active .section_vector {
+  transform: rotate(45deg);
 
 }
-
-.active .section_vector::after {
-  transform: translateX(1px) rotate(45deg);
+.vector{
+  width: 100%;
 }
-
 //footer//
 .footer {
   margin: 0 auto;
@@ -627,13 +604,13 @@ label {
 
 
 .footer_inner {
-  margin: 0 25px;
+  margin: 0 70px;
   padding: 0 50px;
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 30px 30px 0 0;
   box-shadow: $boxShadowGrey;
   background: #a8f000c2;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   top: 0;
   left: 0;
@@ -670,7 +647,8 @@ label {
   margin: 36px 0 35px;
 }
 
-.footer_name {
+.footer_name,
+.footer_email {
   font-size: 18px;
   padding: 10px 15px;
   background: #b8eb59;
@@ -684,33 +662,18 @@ label {
   background: #b3e851;
   border: 2px solid rgb(103, 129, 46);
 }
+.footer_email:hover {
+  background: #b3e851;
+  border: 2px solid rgb(103, 129, 46);
+}
 
 .footer_name:active {
   background: #a9da4d;
   border: 2px solid rgb(76, 96, 34);
 }
-
-.footer_email {
-  font-size: 18px;
-  padding: 10px 15px;
-  background: #b8eb59;
-  box-shadow: $boxShadowGrin;
-  border: 2px solid rgb(125, 159, 56);
-  border-radius: $bordRad;
-
-}
-
-.footer_email:hover {
-  background: #b3e851;
-  border: 2px solid rgb(103, 129, 46);
-  outline: none;
-}
-
 .footer_email:active {
   background: #a9da4d;
   border: 2px solid rgb(76, 96, 34);
-  outline: none;
-
 }
 
 .footer_btn {
@@ -719,7 +682,7 @@ label {
   font-weight: 900;
   border-radius: $bordRad;
   box-shadow: $boxShadowGrin;
-  border: 2px solid rgba(241, 220, 22, 0.84);
+  border: 2px solid #FFEF3AFF;
   padding: 13px 28px;
   background: $bgColorYellow;
 }
@@ -739,8 +702,10 @@ label {
 .footer_img {
   display: block;
   position: absolute;
-  top: -159px;
+  top: -72px;
   right: -56px;
+  height: 100%;
+
 
 }
 
