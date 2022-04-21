@@ -5,7 +5,7 @@ $bgActiveGreen: #88c900;
 $boxShadowGrey: 0px 8px 65px rgb(128 128 128 / 41%);
 $boxShadowGrin: 0px 10px 37px rgb(21 86 11 / 26%);
 $boxShadowYellow: 12px 10px 37px #b9ae275c;
-$bordRad: 40px;
+$bordRad: 35px;
 
 
 body {
@@ -100,11 +100,13 @@ body {
 .nav_link:active {
   color: $bgActiveGreen;
 }
-#sign_in:after{
+
+#sign_in:after {
   background-color: #d53940;
 }
-#sign_in:active{
-  color:  #d53940;
+
+#sign_in:active {
+  color: #d53940;
 }
 
 .main {
@@ -194,7 +196,7 @@ body {
 
 .img_rocket {
   width: 80%;
-  background-image: radial-gradient(circle closest-corner at 62% 54%, #0800ffd9 -35%, transparent 65%);
+  background-image: radial-gradient(circle closest-corner at 60% 55%, #0800ffd9 -61%, transparent 70%);
 }
 
 
@@ -234,7 +236,7 @@ body {
   background-color: white;
   font-size: 22px;
   padding: 12px 13px;
-  border-radius: 25px;
+  border-radius: 18px;
   margin-left: 15px;
   box-shadow: $boxShadowYellow;
 }
@@ -252,12 +254,13 @@ body {
   right: 0;
   z-index: 1;
   padding: 40px 0 160px;
-  background: radial-gradient(circle closest-corner at 47% 56%, #A8F00066 -8%, transparent 54%);
-
+  background: radial-gradient(circle closest-corner at 45% 45%, #A8F00066 -9%, transparent 53%);
 }
 
 .section_header {
-  padding: 15px 0 60px;
+  padding: 15px 0 70px;
+  display: flex;
+  justify-content: center;
 }
 
 .section_title {
@@ -270,7 +273,6 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 73px;
 }
 
 .card_item {
@@ -335,7 +337,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: flex-end;
-  margin: 0 25px;
+  padding: 0 25px;
 
 }
 
@@ -485,7 +487,7 @@ label {
 
 .about_item_4 {
   grid-column-start: 4;
-  grid-row-start: 1;
+  grid-row-start: 2;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -552,16 +554,15 @@ label {
 }
 
 .section_vector {
-  width: 40px;
-  height: 40px;
-  padding: 7px;
+  display: flex;
+}
+
+.vector {
+  width: 100%;
+  padding: 6px;
   background: #ffffff;
   border-radius: $bordRad;
   box-shadow: $boxShadowGrey;
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 1;
 }
 
 .section_vector:hover {
@@ -578,7 +579,7 @@ label {
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  padding: 0 10px 20px;
+  padding: 0 20px 20px;
 }
 
 .active .accordion_content {
@@ -589,9 +590,11 @@ label {
   transform: rotate(45deg);
 
 }
-.vector{
+
+.vector {
   width: 100%;
 }
+
 //footer//
 .footer {
   margin: 0 auto;
@@ -662,6 +665,7 @@ label {
   background: #b3e851;
   border: 2px solid rgb(103, 129, 46);
 }
+
 .footer_email:hover {
   background: #b3e851;
   border: 2px solid rgb(103, 129, 46);
@@ -671,6 +675,7 @@ label {
   background: #a9da4d;
   border: 2px solid rgb(76, 96, 34);
 }
+
 .footer_email:active {
   background: #a9da4d;
   border: 2px solid rgb(76, 96, 34);

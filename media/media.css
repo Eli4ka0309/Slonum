@@ -35,11 +35,6 @@
         font-size: 33px;
     }
 
-    .card_inner {
-        margin-top: 24px;
-    }
-
-
     .form_inner {
         margin: auto 80px;
     }
@@ -108,9 +103,8 @@
 
     }
 
-    .section_vector {
-        width: 36px;
-        height: 36px;
+    .vector {
+
     }
 
     .section_info {
@@ -212,8 +206,8 @@
     .timer_days,
     .timer_hours,
     .timer_minutes {
-        font-size: 18px;
-        padding: 9px 23px;
+        font-size: 15px;
+        padding: 14px 21px;
     }
 
     .intro_img {
@@ -265,7 +259,7 @@
     }
 
     .form_title {
-        margin-top: 23px;
+        margin-top: 35px;
         font-size: 26px;
     }
 
@@ -328,12 +322,8 @@
     }
 
     .accordion_content {
-        padding: 0 33px 11px;
+        padding: 0 24px 11px;
         font-size: 16px;
-    }
-
-    .section_vector {
-        padding: 8px;
     }
 
     /*footer*/
@@ -369,20 +359,175 @@
     .header_nav {
         font-size: 13px;
     }
+
     /*intro**/
-    .intro_title {
-        font-size: 45px;
+    .intro_inner {
+        padding: 126px 0 72px;
     }
+
+    .intro_title {
+        font-size: 43px;
+    }
+
     .intro_subtitle {
+        font-size: 22px;
+    }
+
+    .intro_btm {
+        font-size: 16px;
+    }
+
+    .timer_title {
+        font-size: 16px;
+    }
+
+    .intro_img {
+        top: 63px;
+        right: -363px;
+    }
+
+    .img_rocket {
+        width: 56%;
+    }
+
+    .section_header {
+        padding: 0 0 20px;
+    }
+    .section_title {
+        font-size: 25px;
+    }
+
+    .about_title {
+        margin-top: 3px;
+        font-size: 16px;
+    }
+
+    .about_subtitle {
+        margin-top: 2px;
+        font-size: 14px;
+    }
+
+    .about_num {
+        font-size: 18px;
+        padding: 11px 19px;
+    }
+
+    /*card*/
+    .card_img {
+        width: 39%;
+        top: -28px;
+        left: 34px;
+    }
+
+    .card_text {
+        font-size: 14px;
+    }
+
+    /*form*/
+    .form_title {
         font-size: 24px;
     }
-    .intro_btm{
-        font-size: 17px;
+
+    .form_subtitle {
+        font-size: 16px;
     }
-    .timer_title {
-        font-size: 17px;
+
+    .name, .email {
+        font-size: 12px;
     }
-    .img_rocket{
-        width: 65%;
+
+    form {
+        margin: 18px 0 7px;
+    }
+
+    .checkbox_txt {
+        font-size: 14px;
+    }
+
+    /*accordion*/
+    .accordion_title {
+        font-size: 16px;
+    }
+
+    .accordion_content {
+        font-size: 14px;
+    }
+
+    .footer_name,
+    .footer_email {
+        font-size: 13px;
+        padding: 6px 11px;
     }
 }
+
+@media (max-width: 790px) {
+    /*header*/
+    .header_inner{
+        margin-top: 25px;
+    }
+    .header_nav {
+        font-size: 12px;
+    }
+    /*intro*/
+    .intro_inner {
+        padding: 126px 0 66px;
+    }
+    .intro_title {
+        font-size: 36px;
+    }
+    .intro_subtitle {
+        font-size: 18px;
+        margin-top: 11px;
+
+    }
+    .btm_item {
+        margin-top: 23px;
+    }
+    .intro_btm{
+        padding: 12px 40px;
+        font-size: 13px;
+    }
+    .timer{
+        padding: 12px 26px;
+    }
+    .timer_title{
+        font-size: 13px;
+    }
+    .timer_item{
+        margin-top: 9px;
+
+    }
+    .timer_days,
+    .timer_hours,
+    .timer_minutes {
+        font-size: 13px;
+        padding: 11px 18px;
+    }
+    .intro_img {
+        top: 45px;
+        right: -413px;
+    }
+    .img_rocket {
+        width: 40%;
+    }
+    .intro_img{
+        top: 70px;
+        right: -454px;
+    }
+    /*advant*/
+    .section_advant {
+        padding: 16px 0 29px;
+    }
+    .section_title{
+        font-size: 22px;
+    }
+    .card_item{
+        display: flex;
+        justify-content: center;
+        margin: 18px 6px;
+        width: 45%;
+    }
+
+
+}
+

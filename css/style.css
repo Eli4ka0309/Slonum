@@ -137,7 +137,7 @@ body {
 
 .title_bg {
   background: #A8F000;
-  border-radius: 40px;
+  border-radius: 35px;
   padding: 5px 15px;
 }
 
@@ -165,7 +165,7 @@ body {
   font-size: 22px;
   font-weight: 800;
   border: none;
-  border-radius: 40px;
+  border-radius: 35px;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   -webkit-transition: 0.2s;
@@ -190,12 +190,12 @@ body {
 
 .img_rocket {
   width: 80%;
-  background-image: radial-gradient(circle closest-corner at 62% 54%, #0800ffd9 -35%, transparent 65%);
+  background-image: radial-gradient(circle closest-corner at 60% 55%, #0800ffd9 -61%, transparent 70%);
 }
 
 .timer {
   margin-left: 43px;
-  border-radius: 40px;
+  border-radius: 35px;
   background-color: #ffef3a;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
@@ -244,7 +244,7 @@ body {
   background-color: white;
   font-size: 22px;
   padding: 12px 13px;
-  border-radius: 25px;
+  border-radius: 18px;
   margin-left: 15px;
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
@@ -262,11 +262,17 @@ body {
   right: 0;
   z-index: 1;
   padding: 40px 0 160px;
-  background: radial-gradient(circle closest-corner at 47% 56%, #A8F00066 -8%, transparent 54%);
+  background: radial-gradient(circle closest-corner at 45% 45%, #A8F00066 -9%, transparent 53%);
 }
 
 .section_header {
-  padding: 15px 0 60px;
+  padding: 15px 0 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section_title {
@@ -284,14 +290,13 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 73px;
 }
 
 .card_item {
   background: white;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-  border-radius: 40px;
+  border-radius: 35px;
   margin: 40px 12px;
   padding: 77px 29px 25px;
   width: 31%;
@@ -331,7 +336,7 @@ body {
   background: #ffef3a;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-  border-radius: 40px;
+  border-radius: 35px;
   margin: auto 50px;
 }
 
@@ -355,7 +360,7 @@ body {
           flex-direction: column;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  margin: 0 25px;
+  padding: 0 25px;
 }
 
 .form_title {
@@ -368,7 +373,7 @@ body {
 
 .form_text {
   background-color: #A8F000;
-  border-radius: 40px;
+  border-radius: 35px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   padding: 5px 15px;
@@ -392,7 +397,7 @@ form {
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
   border: 2px solid rgba(148, 138, 14, 0.84);
-  border-radius: 40px;
+  border-radius: 35px;
 }
 
 .name:hover {
@@ -411,7 +416,7 @@ form {
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
   border: 2px solid rgba(148, 138, 14, 0.84);
-  border-radius: 40px;
+  border-radius: 35px;
 }
 
 .email:hover {
@@ -427,7 +432,7 @@ form {
   font-size: 17px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
-  border-radius: 40px;
+  border-radius: 35px;
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
   border: 2px solid #A8F000;
@@ -525,8 +530,8 @@ label {
 .about_item_4 {
   -ms-grid-column: 4;
       grid-column-start: 4;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,17 +604,18 @@ label {
 }
 
 .section_vector {
-  width: 40px;
-  height: 40px;
-  padding: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vector {
+  width: 100%;
+  padding: 6px;
   background: #ffffff;
-  border-radius: 40px;
+  border-radius: 35px;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 1;
 }
 
 .section_vector:hover {
@@ -625,7 +631,7 @@ label {
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  padding: 0 10px 20px;
+  padding: 0 20px 20px;
 }
 
 .active .accordion_content {
@@ -702,7 +708,7 @@ label {
   -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
           box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
   border: 2px solid #7d9f38;
-  border-radius: 40px;
+  border-radius: 35px;
 }
 
 .footer_name:hover {
@@ -729,7 +735,7 @@ label {
   font-size: 17px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
-  border-radius: 40px;
+  border-radius: 35px;
   -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
           box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
   border: 2px solid #FFEF3AFF;
