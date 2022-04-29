@@ -5,7 +5,7 @@ $bgActiveGreen: #88c900;
 $boxShadowGrey: 0px 8px 65px rgb(128 128 128 / 41%);
 $boxShadowGrin: 0px 10px 37px rgb(21 86 11 / 26%);
 $boxShadowYellow: 12px 10px 37px #b9ae275c;
-$bordRad: 40px;
+$bordRad: 25px;
 
 
 body {
@@ -128,7 +128,7 @@ body {
 
 .intro_inner {
   padding: 0 40% 0 28px;
-  margin: 231px 0 160px;
+  margin: 230px 0 90px;
   position: relative;
   top: 0;
   left: 0;
@@ -230,7 +230,7 @@ body {
   background-color: white;
   font-size: 22px;
   padding: 12px 13px;
-  border-radius: 25px;
+  border-radius: 20px;
   margin-left: 15px;
   box-shadow: $boxShadowYellow;
 }
@@ -247,9 +247,8 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  padding:  0 160px;
-  background: radial-gradient(circle closest-corner at 47% 56%, #A8F00066 -8%, transparent 54%);
-
+  padding: 100px 0 180px;
+  background:radial-gradient(circle closest-corner at 50% 50%, #A8F00066 -2%, transparent 42%);
 }
 
 .section_header {
@@ -274,24 +273,15 @@ body {
   background: white;
   box-shadow: $boxShadowGrey;
   border-radius: $bordRad;
-  margin: 35px 6px;
-  width: 48%;
-  height: 130px;
-  padding: 0 15px;
+  margin: 10px 9px;
+  width: 40%;
+  height: 115px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 1;
-}
-
-
-.card_img {
-  position: absolute;
-  top: -50px;
-  width: 100%;
-  max-width: 120px;
-  z-index: 3;
 }
 
 .card_text {
@@ -371,7 +361,7 @@ form {
   padding: 10px 15px;
   background: #f6e93e;
   box-shadow: $boxShadowYellow;
-  border: 2px solid rgba(148, 138, 14, 0.84);
+  border: 1px solid rgba(148, 138, 14, 0.84);
   border-radius: $bordRad;
 }
 
@@ -389,7 +379,7 @@ form {
   padding: 10px 15px;
   background: #f6e93e;
   box-shadow: $boxShadowYellow;
-  border: 2px solid rgba(148, 138, 14, 0.84);
+  border: 1px solid rgba(148, 138, 14, 0.84);
   border-radius: $bordRad;
 }
 
@@ -408,7 +398,7 @@ form {
   font-weight: 900;
   border-radius: $bordRad;
   box-shadow: $boxShadowYellow;
-  border: 2px solid $bgColorGrin;
+  border: 1px solid $bgColorGrin;
   padding: 13px 28px;
   background: $bgColorGrin;
 }
@@ -457,7 +447,7 @@ label {
   background-image: url("/img/about/about_bg.svg");
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(5, 2fr);
   padding: 30px 0;
   margin: 0 50px;
 
@@ -466,12 +456,14 @@ label {
 .about_item_1 {
   grid-column-start: 1;
   grid-row-start: 2;
+  grid-column-end: 3;
   display: flex;
   flex-wrap: wrap;
 }
 
 .about_item_2 {
   grid-column-start: 2;
+  grid-column-end: 4;
   grid-row-start: 1;
   display: flex;
   flex-wrap: wrap;
@@ -479,6 +471,7 @@ label {
 
 .about_item_3 {
   grid-column-start: 3;
+  grid-column-end: 5;
   grid-row-start: 4;
   display: flex;
   flex-wrap: wrap;
@@ -486,6 +479,7 @@ label {
 
 .about_item_4 {
   grid-column-start: 4;
+  grid-column-end: 6;
   grid-row-start: 2;
   display: flex;
   flex-wrap: wrap;
@@ -539,7 +533,6 @@ label {
 }
 
 .accordion_header {
-  position: relative;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -552,25 +545,21 @@ label {
   font-weight: 900;
 }
 
-.section_vector {
-  width: 40px;
-  height: 40px;
+.vector {
+  width: 5%;
+  max-width: 35px;
   padding: 7px;
   background: #ffffff;
   border-radius: $bordRad;
   box-shadow: $boxShadowGrey;
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 1;
 }
 
-.section_vector:hover {
-  background: rgba(0, 0, 0, 0.18);
+.vector:hover {
+  background: rgba(0, 0, 0, 0.11);
 }
 
-.section_vector:active {
-  background: rgba(0, 0, 0, 0.34);
+.vector:active {
+  background: rgba(0, 0, 0, 0.25);
 }
 
 
@@ -579,20 +568,16 @@ label {
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  padding: 0 10px 20px;
+  padding: 0 20px 20px;
 }
 
 .active .accordion_content {
   display: block;
 }
 
-.active .section_vector {
+.active .vector {
   transform: rotate(45deg);
 
-}
-
-.vector {
-  width: 100%;
 }
 
 //footer//
@@ -653,32 +638,32 @@ label {
 .footer_name,
 .footer_email {
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 8px 0 8px 15px;
   background: #b8eb59;
   box-shadow: $boxShadowGrin;
-  border: 2px solid rgb(125, 159, 56);
+  border: 1px solid rgb(125, 159, 56);
   border-radius: $bordRad;
 
 }
 
 .footer_name:hover {
   background: #b3e851;
-  border: 2px solid rgb(103, 129, 46);
+  border: 1px solid rgb(103, 129, 46);
 }
 
 .footer_email:hover {
   background: #b3e851;
-  border: 2px solid rgb(103, 129, 46);
+  border: 1px solid rgb(103, 129, 46);
 }
 
 .footer_name:active {
   background: #a9da4d;
-  border: 2px solid rgb(76, 96, 34);
+  border: 1px solid rgb(76, 96, 34);
 }
 
 .footer_email:active {
   background: #a9da4d;
-  border: 2px solid rgb(76, 96, 34);
+  border: 1px solid rgb(76, 96, 34);
 }
 
 .footer_btn {
@@ -687,8 +672,8 @@ label {
   font-weight: 900;
   border-radius: $bordRad;
   box-shadow: $boxShadowGrin;
-  border: 2px solid #FFEF3AFF;
-  padding: 13px 28px;
+  border: 1px solid #FFEF3AFF;
+  padding: 9px 28px;
   background: $bgColorYellow;
 }
 
@@ -716,7 +701,7 @@ label {
 .social {
   display: flex;
   align-items: flex-end;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .fab {

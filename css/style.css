@@ -118,7 +118,7 @@ body {
 
 .intro_inner {
   padding: 0 40% 0 28px;
-  margin: 231px 0 160px;
+  margin: 230px 0 90px;
   position: relative;
   top: 0;
   left: 0;
@@ -134,7 +134,7 @@ body {
 
 .title_bg {
   background: #A8F000;
-  border-radius: 40px;
+  border-radius: 25px;
   padding: 5px 15px;
 }
 
@@ -162,7 +162,7 @@ body {
   font-size: 22px;
   font-weight: 800;
   border: none;
-  border-radius: 40px;
+  border-radius: 25px;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
   -webkit-transition: 0.2s;
@@ -189,7 +189,7 @@ body {
 
 .timer {
   margin-left: 43px;
-  border-radius: 40px;
+  border-radius: 25px;
   background-color: #ffef3a;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
@@ -238,7 +238,7 @@ body {
   background-color: white;
   font-size: 22px;
   padding: 12px 13px;
-  border-radius: 25px;
+  border-radius: 20px;
   margin-left: 15px;
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
@@ -255,8 +255,8 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  padding: 0 160px;
-  background: radial-gradient(circle closest-corner at 47% 56%, #A8F00066 -8%, transparent 54%);
+  padding: 100px 0 180px;
+  background: radial-gradient(circle closest-corner at 50% 50%, #A8F00066 -2%, transparent 42%);
 }
 
 .section_header {
@@ -290,11 +290,11 @@ body {
   background: white;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-  border-radius: 40px;
-  margin: 35px 6px;
-  width: 48%;
-  height: 130px;
-  padding: 0 15px;
+  border-radius: 25px;
+  margin: 10px 9px;
+  width: 40%;
+  height: 115px;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,14 +306,6 @@ body {
           align-items: center;
   position: relative;
   z-index: 1;
-}
-
-.card_img {
-  position: absolute;
-  top: -50px;
-  width: 100%;
-  max-width: 120px;
-  z-index: 3;
 }
 
 .card_text {
@@ -340,7 +332,7 @@ body {
   background: #ffef3a;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-  border-radius: 40px;
+  border-radius: 25px;
   margin: auto 30px;
 }
 
@@ -377,7 +369,7 @@ body {
 
 .form_text {
   background-color: #A8F000;
-  border-radius: 40px;
+  border-radius: 25px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   padding: 5px 15px;
@@ -400,8 +392,8 @@ form {
   background: #f6e93e;
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
-  border: 2px solid rgba(148, 138, 14, 0.84);
-  border-radius: 40px;
+  border: 1px solid rgba(148, 138, 14, 0.84);
+  border-radius: 25px;
 }
 
 .name:hover {
@@ -419,8 +411,8 @@ form {
   background: #f6e93e;
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
-  border: 2px solid rgba(148, 138, 14, 0.84);
-  border-radius: 40px;
+  border: 1px solid rgba(148, 138, 14, 0.84);
+  border-radius: 25px;
 }
 
 .email:hover {
@@ -436,10 +428,10 @@ form {
   font-size: 17px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
-  border-radius: 40px;
+  border-radius: 25px;
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
-  border: 2px solid #A8F000;
+  border: 1px solid #A8F000;
   padding: 13px 28px;
   background: #A8F000;
 }
@@ -489,8 +481,8 @@ label {
   background-repeat: no-repeat;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (2fr)[4];
-  grid-template-columns: repeat(4, 2fr);
+  -ms-grid-columns: (2fr)[5];
+  grid-template-columns: repeat(5, 2fr);
   padding: 30px 0;
   margin: 0 50px;
 }
@@ -500,6 +492,8 @@ label {
       grid-column-start: 1;
   -ms-grid-row: 2;
       grid-row-start: 2;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,6 +504,8 @@ label {
 .about_item_2 {
   -ms-grid-column: 2;
       grid-column-start: 2;
+  -ms-grid-column-span: 2;
+  grid-column-end: 4;
   -ms-grid-row: 1;
       grid-row-start: 1;
   display: -webkit-box;
@@ -522,6 +518,8 @@ label {
 .about_item_3 {
   -ms-grid-column: 3;
       grid-column-start: 3;
+  -ms-grid-column-span: 2;
+  grid-column-end: 5;
   -ms-grid-row: 4;
       grid-row-start: 4;
   display: -webkit-box;
@@ -534,6 +532,8 @@ label {
 .about_item_4 {
   -ms-grid-column: 4;
       grid-column-start: 4;
+  -ms-grid-column-span: 2;
+  grid-column-end: 6;
   -ms-grid-row: 2;
       grid-row-start: 2;
   display: -webkit-box;
@@ -588,7 +588,6 @@ label {
 }
 
 .accordion_header {
-  position: relative;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,26 +606,22 @@ label {
   font-weight: 900;
 }
 
-.section_vector {
-  width: 40px;
-  height: 40px;
+.vector {
+  width: 5%;
+  max-width: 35px;
   padding: 7px;
   background: #ffffff;
-  border-radius: 40px;
+  border-radius: 25px;
   -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
           box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 1;
 }
 
-.section_vector:hover {
-  background: rgba(0, 0, 0, 0.18);
+.vector:hover {
+  background: rgba(0, 0, 0, 0.11);
 }
 
-.section_vector:active {
-  background: rgba(0, 0, 0, 0.34);
+.vector:active {
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .accordion_content {
@@ -634,20 +629,16 @@ label {
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  padding: 0 10px 20px;
+  padding: 0 20px 20px;
 }
 
 .active .accordion_content {
   display: block;
 }
 
-.active .section_vector {
+.active .vector {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-}
-
-.vector {
-  width: 100%;
 }
 
 .footer {
@@ -706,43 +697,43 @@ label {
 .footer_name,
 .footer_email {
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 8px 0 8px 15px;
   background: #b8eb59;
   -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
           box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
-  border: 2px solid #7d9f38;
-  border-radius: 40px;
+  border: 1px solid #7d9f38;
+  border-radius: 25px;
 }
 
 .footer_name:hover {
   background: #b3e851;
-  border: 2px solid #67812e;
+  border: 1px solid #67812e;
 }
 
 .footer_email:hover {
   background: #b3e851;
-  border: 2px solid #67812e;
+  border: 1px solid #67812e;
 }
 
 .footer_name:active {
   background: #a9da4d;
-  border: 2px solid #4c6022;
+  border: 1px solid #4c6022;
 }
 
 .footer_email:active {
   background: #a9da4d;
-  border: 2px solid #4c6022;
+  border: 1px solid #4c6022;
 }
 
 .footer_btn {
   font-size: 17px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
-  border-radius: 40px;
+  border-radius: 25px;
   -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
           box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
-  border: 2px solid #FFEF3AFF;
-  padding: 13px 28px;
+  border: 1px solid #FFEF3AFF;
+  padding: 9px 28px;
   background: #ffef3a;
 }
 
@@ -772,7 +763,7 @@ label {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .fab {
