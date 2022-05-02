@@ -33,7 +33,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1380px;
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 .article {
@@ -248,7 +248,7 @@ body {
   right: 0;
   z-index: 1;
   padding: 100px 0 180px;
-  background:radial-gradient(circle closest-corner at 50% 50%, #A8F00066 -2%, transparent 42%);
+  background: radial-gradient(circle closest-corner at 50% 50%, #A8F00066 -2%, transparent 42%);
 }
 
 .section_header {
@@ -310,15 +310,17 @@ body {
   background: $bgColorYellow;
   box-shadow: $boxShadowGrey;
   border-radius: $bordRad;
-  margin: auto 30px;
+  margin: auto 60px;
 }
 
 .img_form {
   position: absolute;
-  top: -138px;
-  left: -27px;
+  top: -25px;
+  left: 0;
   z-index: 10;
-  width: 35%;
+  width: 32%;
+  display: block;
+
 }
 
 .form_item {
@@ -327,6 +329,8 @@ body {
   flex-direction: column;
   align-content: flex-end;
   padding: 0 25px;
+  margin-left: 30%;
+
 
 }
 
@@ -334,14 +338,13 @@ body {
   font-size: 34px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 800;
-  margin-top: 40px;
-  width: 66%;
+  margin-top: 60px;
+  width: 100%;
 }
 
 .form_text {
   background-color: $bgColorGrin;
   border-radius: $bordRad;
-  transform: rotate(45deg);
   padding: 5px 15px;
 }
 
@@ -349,7 +352,8 @@ body {
   font-size: 23px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
-  margin-top: 25px;
+  margin-top: 37px;
+  width: 70%;
 }
 
 form {
@@ -366,7 +370,7 @@ form {
 }
 
 .name:hover {
-  border: 2px solid rgba(138, 127, 14, 0.84);
+  border: 1px solid rgba(138, 127, 14, 0.84);
   background: #f1e436;
 }
 
@@ -384,7 +388,7 @@ form {
 }
 
 .email:hover {
-  border: 2px solid rgba(138, 127, 14, 0.84);
+  border: 1px solid rgba(138, 127, 14, 0.84);
   background: #f1e436;
 }
 
@@ -447,7 +451,7 @@ label {
   background-image: url("/img/about/about_bg.svg");
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: repeat(5, 2fr);
+  grid-template-columns: repeat(8, 2fr);
   padding: 30px 0;
   margin: 0 50px;
 
@@ -456,14 +460,14 @@ label {
 .about_item_1 {
   grid-column-start: 1;
   grid-row-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 4;
   display: flex;
   flex-wrap: wrap;
 }
 
 .about_item_2 {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 7;
   grid-row-start: 1;
   display: flex;
   flex-wrap: wrap;
@@ -471,16 +475,16 @@ label {
 
 .about_item_3 {
   grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-end: 6;
   grid-row-start: 4;
   display: flex;
   flex-wrap: wrap;
 }
 
 .about_item_4 {
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 2;
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 3;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -592,7 +596,7 @@ label {
 
 
 .footer_inner {
-  margin: 0 70px;
+  margin: 0 100px;
   padding: 0 50px;
   border-radius: 30px 30px 0 0;
   box-shadow: $boxShadowGrey;
@@ -604,27 +608,12 @@ label {
   left: 0;
   right: 0;
   z-index: 1;
-
-
 }
 
 .footer_item {
   display: block;
   position: relative;
   width: 70%;
-
-}
-
-.footer_title {
-  margin-top: 60px;
-  width: 100%;
-
-}
-
-.footer_subtitle {
-  margin-top: 37px;
-  width: 70%;
-
 }
 
 .footer_text {
@@ -635,7 +624,6 @@ label {
   margin: 36px 0 35px;
 }
 
-.footer_name,
 .footer_email {
   font-size: 18px;
   padding: 8px 0 8px 15px;
@@ -643,12 +631,8 @@ label {
   box-shadow: $boxShadowGrin;
   border: 1px solid rgb(125, 159, 56);
   border-radius: $bordRad;
+  width: 40%;
 
-}
-
-.footer_name:hover {
-  background: #b3e851;
-  border: 1px solid rgb(103, 129, 46);
 }
 
 .footer_email:hover {
@@ -656,10 +640,6 @@ label {
   border: 1px solid rgb(103, 129, 46);
 }
 
-.footer_name:active {
-  background: #a9da4d;
-  border: 1px solid rgb(76, 96, 34);
-}
 
 .footer_email:active {
   background: #a9da4d;
