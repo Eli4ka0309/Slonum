@@ -34,11 +34,25 @@ body {
 
 .header {
   margin: 0 auto;
+  width: 100%;
+  padding-top: 35px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+}
+
+.header.fixed {
+  background-color: white;
+  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 10px 0 0;
 }
 
 .header_inner {
@@ -51,11 +65,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 35px;
 }
 
 .logo_icon {
-  width: 9vw;
+  width: 8vw;
 }
 
 .header_nav {
@@ -64,7 +77,7 @@ body {
   display: flex;
   font-family: "Ubuntu", sans-serif;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 21px;
 }
 
 .nav_link {

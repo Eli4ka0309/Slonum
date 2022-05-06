@@ -1,11 +1,18 @@
 $(function (){
-    let introH =$("#intro").innerHeight();
+    let header= $("#header"),
+        introH= $("#intro").innerHeight(),
+        scrollOffset= 0;
+
 
     $(window).on("scroll", function (){
-        console.log(introH)
+        scrollOffset = $(this).scrollTop();
 
+        console.log(scrollOffset);
+        if (scrollOffset >= introH){
+            header.addClass("fixed")
+        } else {
+            header.removeClass("fixed")
+        }
 
     });
-
-
 });
