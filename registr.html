@@ -6,37 +6,145 @@
     <title>Slonum</title>
     <script src="https://kit.fontawesome.com/fe8dcd720c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/reset/reset.css">
-    <link rel="stylesheet" href="/media/media.css">
-    <link rel="stylesheet" href="css/registr.css">
+    <link rel="stylesheet" href="main/css/style.css">
+    <link rel="stylesheet" href="reset/reset.css">
+    <link rel="stylesheet" href="registr/css/registr.css">
+
 </head>
 <body>
-<header class="header" id="header">
-    <div class="container">
-        <div class="header_inner">
-            <a href="index.html" class="header_logo">
-                <img src="/icon/header_logo.svg" class="logo_icon" alt="Slonum">
-            </a>
-            <nav class="header_nav">
-                <a href="registr.html" class="nav_link">Registration</a>
-                <a href="#" class="nav_link" id="sign_in">Sign in</a>
-            </nav>
-        </div>
-    </div>
-</header>
-<main class="main">
-    <div class="container">
-        <h2 class="title">Please sign up to continue</h2>
-        <form autocomplete="off" class="auth" name="form" method="post">
-            <div class="registr_block">
-                <input class="registr_input" type="email" value name="e_mail" required>
-                <span class="registr_bar"></span>
-                <label class="registr_label">Эл. адрес</label>
+<div class="wrapper">
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header_inner">
+                <a href="index.html" class="header_logo">
+                    <img src="main/icon/header_logo.svg" class="logo_icon" alt="Slonum">
+                </a>
+                <nav class="header_nav">
+                    <a href="#" class="nav_link">Registration</a>
+                    <a href="#" class="nav_link sign_in">Sign in</a>
+                </nav>
             </div>
-        </form>
-    </div>
-</main>
+        </div>
+    </header>
+    <main class="main">
+        <section class="registr">
+
+            <div class="container container_login">
+                <div class="registr_inner">
+                    <img class="registr_envelope" src="registr/logo/envelope.svg">
+                    <img class="registr_cup" src="registr/logo/cup.svg">
+                    <form class="registr_form">
+                        <div class="registr_form_title">
+                            <p class="registr_title_content">Register</p>
+                        </div>
+                        <div class="registr_form_subtitle">
+                            <p class="registr_subtitle_content">Enter your details to become a participant of our
+                                Olympiad</p>
+                        </div>
+
+                        <div class="registr_input_name">
+                            <label>
+                                <input tabindex="1" placeholder="Name" class="regisr_input" type="text" name="name">
+                            </label>
+                        </div>
+
+                        <div class="registr_input_surname">
+                            <label>
+                                <input tabindex="2" placeholder="Surname" class="regisr_input" type="text"
+                                       name="surname">
+                            </label>
+                        </div>
+
+                        <div class="registr_input_age">
+                            <label>
+                                <input tabindex="3" placeholder="Age" class="regisr_input" type="date" name="trip-start"
+                                       value="2022-07-22" min="2002-07-22" max="2022-07-22">
+                            </label>
+                        </div>
+
+                        <div class="regisr_input_gender">
+                            <select name="User_gender" class="regisr_input">
+                                <option value="1">Female</option>
+                                <option value="2">Male</option>
+                                <option value="3">Transgender</option>
+                            </select>
+                        </div>
+
+                        <div class="regisr_input_tel">
+                            <label>
+                                <input tabindex="4" placeholder="Tel." class="regisr_input" type="tel"
+                                       name="tel">
+                            </label>
+                        </div>
+
+                        <div class="regisr_input_email">
+                            <label>
+                                <input tabindex="5" placeholder="Email" class="regisr_input" type="email"
+                                       name="email">
+                            </label>
+                        </div>
+
+                        <div class="regisr_input_password">
+                            <label>
+                                <input tabindex="6" placeholder="Password" class="regisr_input" type="password"
+                                       name="password">
+                            </label>
+                        </div>
+
+                        <div class="regisr_input_btn">
+                            <button  class="regisr_btn" type="button"
+                                    name="Button" value="Send">Send
+                            </button>
+                        </div>
+
+                        <span class="registr_input_checkbox">
+                            <input tabindex="7" type="checkbox" name="">I agree to the processing of data processing
+                            <br>
+                            <input tabindex="7" type="checkbox" name="">I agree to receive information about updates by e-mail
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_item">
+                        <div class="form_title footer_title">
+                            <span class="form_text footer_text">Be the first</span>
+                            to know about the start of the Olympics
+                        </div>
+                        <div class="form_subtitle">Subscribe to receive useful materials and do not miss
+                            a single Olympiad
+                        </div>
+                        <form>
+                            <label>
+                                <input type="text" id="email1" placeholder="Email" class="footer_email">
+                            </label>
+                            <label>
+                                <input type="button" id="button1" value="Send" class="footer_btn">
+                            </label>
+                        </form>
+                        <label class="checkbox">
+                            <input class="scale" type="checkbox" name="checkbox" id="footer_scale" checked>
+                            <span class="checkbox_txt">I agree to the processing of data</span>
+                        </label>
+                    </div>
+                    <img src="main/img/footer/footer_img.svg" alt="fire" class="footer_img">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-google-plus"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</div>
 
 </body>
 </html>

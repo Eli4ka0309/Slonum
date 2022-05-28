@@ -37,11 +37,6 @@
         font-size: 21px;
     }
 
-    .timer_item {
-        margin-top: 15px;
-
-    }
-
     .timer_days,
     .timer_hours,
     .timer_minutes {
@@ -162,7 +157,7 @@
 
     /*intro*/
     .intro_inner {
-        margin: 180px 0 90px;
+        margin: 84px 0 61px;
     }
 
     .intro_title {
@@ -190,15 +185,10 @@
         font-size: 18px;
     }
 
-    .timer_item {
-        margin-top: 14px;
-    }
-
     .timer_days,
     .timer_hours,
     .timer_minutes {
         font-size: 15px;
-        padding: 14px 21px;
     }
 
 
@@ -212,10 +202,6 @@
     }
 
     /*card*/
-    .card_item {
-        height: 100px;
-    }
-
     .card_text {
         font-size: 17px;
     }
@@ -334,11 +320,8 @@
     }
 
     /*intro**/
-    .intro_inner {
-        margin: 182px 0 71px;
-    }
-
     .intro_title {
+
         font-size: 43px;
     }
 
@@ -394,10 +377,6 @@
     }
 
     /*card*/
-    .card_item {
-        height: 80px;
-    }
-
     .card_text {
         font-size: 16px;
     }
@@ -467,8 +446,8 @@
 
     /*intro*/
     .intro_inner {
-        margin: 147px 0 63px;
         padding: 0 35% 0 10px;
+        margin: 64px 0 37px;
 
     }
 
@@ -500,7 +479,7 @@
     }
 
     .timer_item {
-        margin-top: 11px;
+        margin-top: 7px;
     }
 
     .timer_days,
@@ -529,13 +508,8 @@
     }
 
     /*card*/
-    .card_item {
-        height: 75px;
-        width: 45%;
-
-    }
-
     .card_text {
+        width: 45%;
         font-size: 14px;
     }
 
@@ -665,8 +639,9 @@
 
 @media (max-width: 625px) {
     /*header*/
-    .header_inner {
-        margin-top: 22px;
+    .header{
+        padding-top: 18px;
+
     }
 
     .logo_icon {
@@ -678,9 +653,18 @@
     }
 
     /* intro*/
+    .intro_title{
+        text-align: center;
+    }
+
+    .intro_subtitle{
+        text-align: center;
+        margin-top: 20px;
+
+
+    }
     .intro_inner {
         padding: 0;
-
     }
 
     .img_rocket {
@@ -690,8 +674,7 @@
     .btm_item {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 38px;
-
+        margin-top: 25px;
     }
 
     .timer {
@@ -705,11 +688,8 @@
     }
 
     /*card*/
-    .card_item {
-        height: 60px;
+    .card_text {
         width: 100%;
-        padding: 0 15px;
-
     }
 
     /*form*/
@@ -844,17 +824,8 @@
 }
 
 @media (max-width: 375px) {
-    /*header*/
-    .header_inner {
-        margin-top: 17px;
-    }
 
     /*intro*/
-    .intro_inner {
-        margin: 124px 0 50px;
-
-    }
-
     .intro_title {
         font-size: 29px;
     }
@@ -904,10 +875,6 @@
     }
 
     /*card*/
-    .card_item {
-        height: 62px;
-    }
-
     .card_text {
         font-size: 13px;
     }

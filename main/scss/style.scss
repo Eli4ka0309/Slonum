@@ -13,6 +13,7 @@ body {
   max-width: 1900px;
   height: 100vh;
   font-size: 19px;
+  font-family: 'Ubuntu', sans-serif;
   color: #000000;
   background-color: #FBFCFD;
 
@@ -48,16 +49,17 @@ body {
 //header//
 .header {
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
   padding-top: 35px;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
 
 }
-.header.fixed{
+
+.header.fixed {
   background-color: white;
   box-shadow: $boxShadowGrey;
   position: fixed;
@@ -76,7 +78,9 @@ body {
 }
 
 .logo_icon {
-  width: 8vw;
+  width: 9vw;
+  background: radial-gradient(circle closest-corner at 23% 44%, $bgColorGrin -20%, transparent 73%);
+
 }
 
 .header_nav {
@@ -102,7 +106,6 @@ body {
   width: 100%;
   height: 2px;
   background-color: $bgColorGrin;
-  z-index: 100;
   opacity: 0;
 }
 
@@ -114,35 +117,38 @@ body {
   color: $bgActiveGreen;
 }
 
-#sign_in:after {
+.sign_in:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
   background-color: #d53940;
+  opacity: 0;
 }
 
-#sign_in:active {
+.sign_in:hover:after {
+  opacity: 1;
+}
+
+.sign_in:active {
   color: #d53940;
 }
 
 .main {
   margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+  height: 100vh;
+
 }
 
 //intro//
 .intro {
-  z-index: 1;
   background: radial-gradient(circle closest-corner at 23% 44%, #FEF138 -20%, transparent 73%);
   overflow: hidden;
-
-
 }
 
 .intro_inner {
   padding: 0 40% 0 28px;
-  margin: 230px 0 90px;
+  margin: 133px 0 100px;
   position: relative;
   top: 0;
   left: 0;
@@ -221,16 +227,21 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 22px;
   font-weight: 800;
+  text-align: center;
+}
+
+.timer_items {
   display: flex;
-  justify-content: center;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 10px;
+
 }
 
 .timer_item {
   display: flex;
   justify-content: center;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
-  font-weight: 900;
   margin-top: 20px;
 }
 
@@ -246,6 +257,7 @@ body {
   padding: 12px 13px;
   border-radius: 20px;
   margin-left: 15px;
+  margin-top: 0;
   box-shadow: $boxShadowYellow;
 }
 
@@ -261,14 +273,13 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  padding: 100px 0 180px;
+  padding: 50px 0 180px;
   background: radial-gradient(circle closest-corner at 50% 50%, #A8F00066 -2%, transparent 42%);
 }
 
 .section_header {
   padding: 15px 0 60px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .section_title {
@@ -283,26 +294,22 @@ body {
   flex-wrap: wrap;
 }
 
-.card_item {
+.card_text {
   background: white;
   box-shadow: $boxShadowGrey;
   border-radius: $bordRad;
   margin: 10px 9px;
+  padding: 12px 20px;
   width: 40%;
-  height: 115px;
-  padding: 0 20px;
+  height: 11vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 1;
-}
+  text-align: center;
 
-.card_text {
   font-size: 21px;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
-  z-index: 100;
 }
 
 //form//
@@ -459,11 +466,10 @@ label {
   z-index: 1;
   padding-top: 128px;
   background: radial-gradient(circle closest-corner at 35% 50%, #A8F00066 -9%, transparent 69%);
-
 }
 
 .about_inner {
-  background-image: url("/img/about/about_bg.svg");
+  background-image: url("/main/img/about/about_bg.svg");
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(8, 2fr);
@@ -552,6 +558,7 @@ label {
 }
 
 .accordion_header {
+  position: relative;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
