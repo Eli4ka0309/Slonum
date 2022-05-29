@@ -35,13 +35,8 @@ body {
 
 .header {
   margin: 0 auto;
-  width: 100vw;
   padding-top: 35px;
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
 }
 
 .header.fixed {
@@ -174,7 +169,7 @@ body {
 }
 
 .intro_btm {
-  padding: 21px 75px;
+  padding: 21px 55px;
   background-color: #A8F000;
   font-family: "Ubuntu", sans-serif;
   font-size: 22px;
@@ -393,13 +388,28 @@ body {
   width: 100%;
 }
 
-form {
-  margin: 25px 0 15px;
+.form_feedback {
+  margin: 15px 0;
 }
 
-.name {
+.form_main {
+  margin: 25px 4px;
+  width: 100%;
+}
+
+.form_main:first-child {
+  margin-left: 0;
+}
+
+.form_checkbox {
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.name, .email {
+  font-family: "Ubuntu", sans-serif;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 9px 15px;
   background: #f6e93e;
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
@@ -414,16 +424,6 @@ form {
 
 .name:active {
   background: #e3d632;
-}
-
-.email {
-  font-size: 18px;
-  padding: 10px 15px;
-  background: #f6e93e;
-  -webkit-box-shadow: 12px 10px 37px #b9ae275c;
-          box-shadow: 12px 10px 37px #b9ae275c;
-  border: 1px solid rgba(148, 138, 14, 0.84);
-  border-radius: 25px;
 }
 
 .email:hover {
@@ -443,7 +443,7 @@ form {
   -webkit-box-shadow: 12px 10px 37px #b9ae275c;
           box-shadow: 12px 10px 37px #b9ae275c;
   border: 1px solid #A8F000;
-  padding: 13px 28px;
+  padding: 9px 26px;
   background: #A8F000;
 }
 
@@ -457,22 +457,6 @@ form {
   background-color: #98d701;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-label {
-  margin-bottom: 33px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-}
-
-.checkbox {
-  display: block;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  position: relative;
 }
 
 .section_about {

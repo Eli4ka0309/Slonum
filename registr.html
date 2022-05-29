@@ -21,7 +21,6 @@
                 </a>
                 <nav class="header_nav">
                     <a href="#" class="nav_link">Registration</a>
-                    <a href="#" class="nav_link sign_in">Sign in</a>
                 </nav>
             </div>
         </div>
@@ -35,7 +34,7 @@
                     <img class="registr_cup" src="registr/logo/cup.svg">
                     <form class="registr_form">
                         <div class="registr_form_title">
-                            <p class="registr_title_content">Register</p>
+                            <p class="registr_title_content">Registration</p>
                         </div>
                         <div class="registr_form_subtitle">
                             <p class="registr_subtitle_content">Enter your details to become a participant of our
@@ -58,16 +57,22 @@
                         <div class="registr_input_age">
                             <label>
                                 <input tabindex="3" placeholder="Age" class="regisr_input" type="date" name="trip-start"
-                                       value="2022-07-22" min="2002-07-22" max="2022-07-22">
+                                       value="0" min="2000-01-01" max="0000-00-00">
                             </label>
                         </div>
 
-                        <div class="regisr_input_gender">
-                            <select name="User_gender" class="regisr_input">
-                                <option value="1">Female</option>
-                                <option value="2">Male</option>
-                                <option value="3">Transgender</option>
-                            </select>
+                        <div class="regisr_input_country">
+                            <label>
+                                <input tabindex="2" placeholder="Country" class="regisr_input" type="text"
+                                       name="country">
+                            </label>
+                        </div>
+
+                        <div class="regisr_input_city">
+                            <label>
+                                <input tabindex="2" placeholder="City" class="regisr_input" type="text"
+                                       name="city">
+                            </label>
                         </div>
 
                         <div class="regisr_input_tel">
@@ -76,6 +81,18 @@
                                        name="tel">
                             </label>
                         </div>
+
+
+                        <div class="regisr_input_gender">
+                            <label>
+                                <select name="User_gender" class="regisr_input">
+                                    <option value="1">Female</option>
+                                    <option value="2">Male</option>
+                                    <option value="3">Transgender</option>
+                                </select>
+                            </label>
+                        </div>
+
 
                         <div class="regisr_input_email">
                             <label>
@@ -92,15 +109,15 @@
                         </div>
 
                         <div class="regisr_input_btn">
-                            <button  class="regisr_btn" type="button"
+                            <button class="regisr_btn" type="button"
                                     name="Button" value="Send">Send
                             </button>
                         </div>
 
                         <span class="registr_input_checkbox">
-                            <input tabindex="7" type="checkbox" name="">I agree to the processing of data processing
+                            <input tabindex="7" type="checkbox" name="checkbox">I agree to the processing of data processing
                             <br>
-                            <input tabindex="7" type="checkbox" name="">I agree to receive information about updates by e-mail
+                            <input tabindex="7" type="checkbox" name="checkbox">I agree to receive information about updates by e-mail
                         </span>
                     </form>
                 </div>

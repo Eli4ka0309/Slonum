@@ -41,3 +41,6 @@ a {
 ::after, ::before{
     transition: 0.3s ;
 }
+button, a{
+    cursor: pointer;
+}

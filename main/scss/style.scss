@@ -49,13 +49,8 @@ body {
 //header//
 .header {
   margin: 0 auto;
-  width: 100vw;
   padding-top: 35px;
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
 
 }
 
@@ -184,7 +179,7 @@ body {
 }
 
 .intro_btm {
-  padding: 21px 75px;
+  padding: 21px 55px;
   background-color: $bgColorGrin;
   font-family: 'Ubuntu', sans-serif;
   font-size: 22px;
@@ -378,13 +373,28 @@ body {
   width: 100%;
 }
 
-form {
-  margin: 25px 0 15px;
+.form_feedback {
+  margin: 15px 0;
+
 }
 
-.name {
+.form_main {
+  margin: 25px 4px;
+  width: 100%;
+}
+
+.form_main:first-child {
+  margin-left: 0;
+}
+
+.form_checkbox{
+  margin-top: 14px;
+  font-size: 14px;
+}
+.name, .email {
+  font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 9px 15px;
   background: #f6e93e;
   box-shadow: $boxShadowYellow;
   border: 1px solid rgba(148, 138, 14, 0.84);
@@ -398,15 +408,6 @@ form {
 
 .name:active {
   background: #e3d632;
-}
-
-.email {
-  font-size: 18px;
-  padding: 10px 15px;
-  background: #f6e93e;
-  box-shadow: $boxShadowYellow;
-  border: 1px solid rgba(148, 138, 14, 0.84);
-  border-radius: $bordRad;
 }
 
 .email:hover {
@@ -425,7 +426,7 @@ form {
   border-radius: $bordRad;
   box-shadow: $boxShadowYellow;
   border: 1px solid $bgColorGrin;
-  padding: 13px 28px;
+  padding: 9px 26px;
   background: $bgColorGrin;
 }
 
@@ -439,21 +440,6 @@ form {
   transition: 0.2s;
 
 }
-
-label {
-  margin-bottom: 33px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
-}
-
-.checkbox {
-  display: block;
-  cursor: pointer;
-  user-select: none;
-  position: relative;
-
-}
-
 
 //section_form//
 .section_about {

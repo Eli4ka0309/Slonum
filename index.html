@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="main/media/media.css">
     <link rel="stylesheet" href="reset/reset.css">
     <link rel="stylesheet" href="registr/css/registr.css">
+    <link rel="stylesheet" href="registr/scss/registr.scss">
 
 </head>
 <body>
@@ -22,7 +23,6 @@
                 </a>
                 <nav class="header_nav">
                     <a href="registr.html" class="nav_link">Registration</a>
-                    <a href="#" class="nav_link sign_in">Sign in</a>
                 </nav>
             </div>
         </div>
@@ -39,8 +39,10 @@
                             Check the child's abilities - compare it with other students of Ukraine
                         </h3>
                         <div class="btm_item">
-                            <a href="#">
-                                <button class="intro_btm">Register</button>
+                            <a href="registr.html">
+                                <button class="intro_btm" type="button"
+                                        name="Button">Registration
+                                </button>
                             </a>
                             <div class="timer">
                                 <p class="timer_title">Before the start of the Olympics</p>
@@ -89,21 +91,29 @@
                             <span class="form_text">Olympiad</span>
                         </div>
                         <div class="form_subtitle">Fill out the form and we will contact you shortly</div>
-                        <form>
-                            <label>
-                                <input type="text" id="name" placeholder="Name" class="name">
-                            </label>
-                            <label>
-                                <input type="text" id="email" placeholder="Email" class="email">
-                            </label>
-                            <label>
-                                <input type="button" id="button" value="Send" class="button">
-                            </label>
+                        <form class="form_feedback">
+                            <span class="form_main">
+                                <label>
+                                    <input type="text" id="name" placeholder="Name" class="name">
+                                </label>
+                            </span>
+                            <span class="form_main">
+                                <label>
+                                    <input type="text" id="email" placeholder="Email" class="email">
+                                </label>
+                            </span>
+                            <span class="form_main">
+                                <label>
+                                    <input type="button" id="button" value="Send" class="button">
+                                </label>
+                            </span>
+
+                            <div class="form_checkbox">
+                                 <label>
+                                    <input class="scale" type="checkbox" name="checkbox" checked>I agree to the processing of data
+                                 </label>
+                            </div>
                         </form>
-                        <label class="checkbox">
-                            <input class="scale" type="checkbox" name="checkbox" id="scale" checked>
-                            <span class="checkbox_txt">I agree to the processing of data</span>
-                        </label>
                     </div>
                 </div>
             </div>
@@ -160,7 +170,7 @@
                                 <img src="main/icon/vector.svg" class="vector" alt="vector">
                             </div>
                         </a>
-                        <div class="accordion_content" id="" >
+                        <div class="accordion_content" id="">
                             <p>The duration will depend on the age of the student.
                                 For children in grades 1-2 - 1.5 hours; 3-6 grade - 2 hours;
                                 6-9 grade - 2.5 hours</p>
