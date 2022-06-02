@@ -21,17 +21,13 @@ $(function () {
 
     }
 
-    $("[data-collapse]").on("click", function(event) {
-        event.preventDefault();
-
-        let $this = $(this);
-        let blockId = $this.data("collapse");
-
-        console.log($(blockId).slideToggle());
-
-        $(blockId).slideUp();
-    });
-
-
 
 });
+
+let accordion = function () {
+    let data = $('.accordion').attr("data-accordion");
+    $(".accordion_header").on("click", function () {
+        $(this).next(".accordion_content").not(':animated').slideToggle()
+    })
+}
+accordion();

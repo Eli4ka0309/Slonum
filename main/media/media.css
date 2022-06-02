@@ -114,7 +114,6 @@
     }
 
     .accordion_content {
-        padding: 0 37px 16px;
         font-size: 20px;
 
     }
@@ -276,16 +275,13 @@
     }
 
     /*accordion*/
-    .accordion_header {
-        padding: 13px 0;
-    }
+
 
     .accordion_title {
         font-size: 19px;
     }
 
     .accordion_content {
-        padding: 0 33px 11px;
         font-size: 16px;
     }
 
@@ -413,7 +409,6 @@
     }
 
     .accordion_content {
-        padding: 0 39px 11px;
         font-size: 15px;
     }
 
@@ -590,10 +585,6 @@
         margin: 0 40px;
     }
 
-    .accordion_header {
-        padding: 7px 0;
-    }
-
     .accordion_title {
         font-size: 14px;
     }
@@ -603,7 +594,6 @@
     }
 
     .accordion_content {
-        padding: 0 35px 8px;
         font-size: 13px;
     }
 
@@ -786,9 +776,6 @@
         margin: 0;
     }
 
-    .accordion_content {
-        padding: 0 21px 8px;
-    }
 
     .footer_item {
         width: 100%;
@@ -956,7 +943,6 @@
     }
 
     .accordion_content {
-        padding: 0 19px 6px;
         font-size: 12px;
     }
 

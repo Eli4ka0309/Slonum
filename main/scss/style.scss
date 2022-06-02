@@ -387,10 +387,11 @@ body {
   margin-left: 0;
 }
 
-.form_checkbox{
+.form_checkbox {
   margin-top: 14px;
   font-size: 14px;
 }
+
 .name, .email {
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
@@ -537,6 +538,7 @@ body {
 //accordion//
 .accordion {
   margin: 0 45px;
+
 }
 
 .accordion_item {
@@ -544,51 +546,44 @@ body {
 }
 
 .accordion_header {
-  position: relative;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.accordion_title {
   font-size: 22px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
+  padding: 0.2em 1em;
+  min-height: 3rem;
+  line-height: 3rem;
+
+
 }
 
-.vector {
-  width: 5%;
-  max-width: 35px;
-  padding: 7px;
-  background: #ffffff;
-  border-radius: $bordRad;
-  box-shadow: $boxShadowGrey;
+.accordion_header:after {
+  content: '\02795';
+  font-size: 1.2rem;
+  color: black;
+  float: right;
+
 }
 
-.vector:hover {
-  background: rgba(0, 0, 0, 0.11);
+.accordion_header.active:after {
+  content: '\02796';
+  font-size: 1.2rem;
+  color: black;
+  float: right;
+
 }
 
-.vector:active {
-  background: rgba(0, 0, 0, 0.25);
-}
+.active {
 
+
+}
 
 .accordion_content {
   display: none;
   font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  padding: 0 20px 20px;
-}
+  padding: 0 38px 20px;
 
-.active .accordion_content {
-  display: block;
-}
-
-.active .vector {
-  transform: rotate(45deg);
 
 }
 
