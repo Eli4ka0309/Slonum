@@ -58,7 +58,6 @@
     }
 
     .form_title {
-        margin-top: 35px;
         font-size: 32px;
     }
 
@@ -222,7 +221,6 @@
     }
 
     .form_title {
-        margin-top: 35px;
         font-size: 26px;
     }
 
@@ -275,8 +273,6 @@
     }
 
     /*accordion*/
-
-
     .accordion_title {
         font-size: 19px;
     }
@@ -526,7 +522,6 @@
 
     .form_title {
         font-size: 22px;
-        margin-top: 24px;
 
     }
 
@@ -629,7 +624,7 @@
 
 @media (max-width: 625px) {
     /*header*/
-    .header{
+    .header {
         padding-top: 18px;
 
     }
@@ -643,16 +638,17 @@
     }
 
     /* intro*/
-    .intro_title{
+    .intro_title {
         text-align: center;
     }
 
-    .intro_subtitle{
+    .intro_subtitle {
         text-align: center;
         margin-top: 20px;
 
 
     }
+
     .intro_inner {
         padding: 0;
     }
@@ -720,7 +716,6 @@
     .form_title {
         width: 100%;
         font-size: 20px;
-        margin-top: 20px;
     }
 
     .form_subtitle {
@@ -879,7 +874,6 @@
 
     .form_title {
         font-size: 16px;
-        margin-top: 14px;
     }
 
     .form_subtitle {
