@@ -1,6 +1,6 @@
 .registr {
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 130px 0;
 }
 
 .registr_bulb {
@@ -152,6 +152,10 @@ select {
           appearance: none;
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fdf1f1 inset;
+}
+
 .regisr_input_btn {
   height: 100%;
   display: -webkit-box;
@@ -160,7 +164,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 11px;
+  margin-bottom: 22px;
 }
 
 .regisr_btn {
@@ -176,7 +180,11 @@ select {
 }
 
 .registr_input_checkbox {
-  font-size: 16px;
+  font-size: 17px;
+}
+
+input[type=checkbox i] {
+  margin: 3px 8px 7px 4px;
 }
 
 .registr_social {
@@ -187,7 +195,7 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
   background: #A8F000;
-  border: #93d003 1px solid;
+  border: #a6e906 1px solid;
   -webkit-box-shadow: 0px 10px 37px rgba(22, 98, 10, 0.3);
           box-shadow: 0px 10px 37px rgba(22, 98, 10, 0.3);
   border-radius: 35px 35px 0 0;

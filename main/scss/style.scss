@@ -11,7 +11,6 @@ $bordRad: 25px;
 body {
   margin: 0 auto;
   max-width: 1900px;
-  height: 100vh;
   font-size: 19px;
   font-family: 'Ubuntu', sans-serif;
   color: #000000;
@@ -73,7 +72,6 @@ body {
 }
 
 .logo_icon {
-  width: 9vw;
   background: radial-gradient(circle closest-corner at 23% 44%, $bgColorGrin -20%, transparent 73%);
 
 }
@@ -82,7 +80,7 @@ body {
   display: flex;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 800;
-  font-size: 21px;
+  font-size: 1.2em;
 }
 
 //nav//
@@ -131,8 +129,6 @@ body {
 
 .main {
   margin: 0 auto;
-  height: 100vh;
-
 }
 
 //intro//
@@ -296,8 +292,7 @@ body {
   margin: 10px 9px;
   padding: 12px 20px;
   width: 40%;
-  height: 11vh;
-
+  height: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,7 +341,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: flex-end;
-  margin-left: 33%;
+  margin-left: 37%;
 
 
 }
@@ -389,6 +384,10 @@ body {
 .form_checkbox {
   margin-top: 14px;
   font-size: 14px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fded39 inset;
 }
 
 .name, .email {
@@ -531,7 +530,7 @@ body {
   z-index: 1;
   margin: 0 auto;
   padding: 50px 0 180px;
-  background: radial-gradient(circle closest-corner at 46% 65%, #FEF138 -39%, transparent 62%);
+  background: radial-gradient(circle closest-corner at 46% 65%, #FEF138 -39%, transparent 45%);
 }
 
 //accordion//
@@ -599,7 +598,7 @@ body {
 
 .footer_inner {
   margin: 0 10%;
-  padding: 2em;
+  padding: 2em 3.5em;
   border-radius: 30px 30px 0 0;
   box-shadow: $boxShadowGrey;
   background: #a8f000c2;
@@ -680,23 +679,27 @@ body {
   max-height: 400px;
 }
 
+.checkbox {
+  margin-top: 1em;
+}
+
 .social {
   display: flex;
   align-items: flex-end;
 
 }
 
-.social_icon {
+.fa {
   font-size: 28px;
   padding-left: 15px;
   color: rgba(0, 0, 0, 0.66);
 }
 
-.social_icon:hover {
+.fa:hover {
   color: rgba(0, 0, 0, 0.81);
 }
 
-.social_icon:active {
+.fa:active {
   color: black;
 }
 
