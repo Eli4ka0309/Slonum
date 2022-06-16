@@ -41,8 +41,8 @@ body {
 
 .header.fixed {
   background-color: white;
-  -webkit-box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
-          box-shadow: 0px 8px 65px rgba(128, 128, 128, 0.41);
+  -webkit-box-shadow: 0px 0px 65px rgba(128, 128, 128, 0.26);
+          box-shadow: 0px 0px 65px rgba(128, 128, 128, 0.26);
   position: fixed;
   top: 0;
   left: 0;
@@ -65,6 +65,8 @@ body {
 
 .logo_icon {
   background: radial-gradient(circle closest-corner at 23% 44%, #A8F000 -20%, transparent 73%);
+  width: 100%;
+  max-width: 111px;
 }
 
 .header_nav {
@@ -218,7 +220,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
   font-weight: 900;
   margin-top: 10px;
 }
@@ -258,7 +259,7 @@ body {
           box-shadow: 12px 10px 37px #b9ae275c;
 }
 
-.timer_days {
+.timer_days:first-child {
   margin-left: 0;
 }
 
@@ -659,13 +660,13 @@ input:-webkit-autofill {
 
 .footer_email {
   font-size: 18px;
-  padding: 8px 0 8px 15px;
+  padding: 8px 13px;
   background: #b8eb59;
   -webkit-box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
           box-shadow: 0px 10px 37px rgba(21, 86, 11, 0.26);
   border: 1px solid #7d9f38;
   border-radius: 25px;
-  width: 40%;
+  width: 45%;
 }
 
 .footer_email:hover {
@@ -709,6 +710,10 @@ input:-webkit-autofill {
   max-height: 400px;
 }
 
+input[type=checkbox i] {
+  margin: 25px 8px 7px 4px;
+}
+
 .checkbox {
   margin-top: 1em;
 }
@@ -722,9 +727,16 @@ input:-webkit-autofill {
           align-items: flex-end;
 }
 
+.social_icon {
+  margin-left: 10px;
+}
+
+.social_icon:first-child {
+  margin-left: 0;
+}
+
 .fa {
   font-size: 28px;
-  padding-left: 15px;
   color: rgba(0, 0, 0, 0.66);
 }
 

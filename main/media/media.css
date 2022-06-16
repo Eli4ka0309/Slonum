@@ -140,6 +140,10 @@
 
 @media (max-width: 1091px ) {
     /*header*/
+    .header_nav {
+        font-size: 1.1em;
+    }
+
     /*intro*/
     .intro_inner {
         margin: 84px 0 61px;
@@ -239,9 +243,9 @@
     }
 
     /*footer*/
-    .footer_email {
-        font-size: 14px;
-        padding: 6px 0 6px 11px;
+    .footer_inner {
+        margin: 0 5%;
+        padding: 2em 2.5em;
     }
 
     .footer_btn {
@@ -255,6 +259,10 @@
         height: 90%;
     }
 
+    input[type=checkbox i] {
+        margin: 10px 8px 7px 4px;
+    }
+
     .fab {
         font-size: 26px;
         padding-left: 9px;
@@ -262,91 +270,29 @@
 
 }
 
-@media (max-width: 930px) {
-    /*header*/
-    .header_nav {
-        font-size: 13px;
-    }
-
-    /*intro**/
-    .intro_img {
-        top: 74px;
-        right: -320px;
-    }
-
-    .img_rocket {
-        width: 50%;
-        top: -84px;
-        right: -43px;
-    }
-
-    .section_advant {
-        padding: 0 0 70px;
-
-    }
-
-    .about_num {
-        font-size: 18px;
-        padding: 11px 19px;
-    }
-
-    /*card*/
-    .card_text {
-        font-size: 16px;
-    }
-
-    /*form*/
-    .form_inner {
-        margin: 0 auto;
-
-    }
-
-    .form_subtitle {
-        font-size: 16px;
-    }
-
-    form {
-        margin: 18px 0 7px;
-    }
-
-    .checkbox_txt {
-        font-size: 14px;
-    }
-
-    /*accordion*/
-    .accordion_title {
-        font-size: 18px;
-    }
-
-    .accordion_content {
-        font-size: 15px;
-    }
-
-    /*footer*/
-    .footer_inner {
-        margin: 0 5%;
-
-    }
-
-    .footer_btn {
-        font-size: 13px;
-        padding: 6px 20px;
-    }
-
-    .fab {
-        font-size: 23px;
-        padding-left: 8px;
-    }
-}
-
 @media (max-width: 787px) {
+    /*header*/
+    .header {
+        padding-top: 15px;
+
+    }
+
     .header_nav {
-        font-size: 12px;
+        font-size: 18px;
+    }
+
+    .logo_icon {
+        max-width: 84px;
+
     }
 
     /*intro*/
+    .intro_title {
+        font-size: 50px;
+    }
+
     .intro_inner {
-        padding: 0 35% 0 10px;
+        padding: 0 35% 0 0;
 
     }
 
@@ -354,26 +300,27 @@
         margin-top: 24px;
     }
 
+
     .timer {
-        margin-left: 17px;
+        padding: 15px 25px;
+
     }
 
     .timer_item {
         margin-top: 7px;
+
     }
 
     .timer_days,
     .timer_hours,
     .timer_minutes {
-        font-size: 14px;
-        margin-left: 8px;
-
+        font-size: 18px;
+        margin-left: 14px;
     }
 
-    .img_rocket {
-        top: -71px;
-        right: -25px;
-        width: 45%;
+    /*section*/
+    .section_title {
+        font-size: 31px;
     }
 
     /*info*/
@@ -384,23 +331,35 @@
     /*card*/
     .card_text {
         width: 45%;
-        font-size: 14px;
     }
 
     /*form*/
     .form_inner {
-        margin: auto 0;
+        margin: 0;
+        padding: 1em 1.5em;
+
     }
 
+    .form_item {
+        margin-left: 34%;
+    }
+
+    .form_feedback {
+        margin: 0;
+    }
+
+    .form_main {
+        margin: 0;
+    }
 
     .img_form {
-        top: unset;
-        width: 30%;
-        left: unset;
+        top: 0;
+        width: 28%;
+        left: 16px;
     }
 
     .form_subtitle {
-        margin-top: 12px;
+        margin: 12px 0;
         font-size: 14px;
     }
 
@@ -408,9 +367,17 @@
         margin: 13px 0 4px;
     }
 
+    .form_checkbox {
+        margin: 0;
+        font-size: 13px;
+    }
+
     .name,
     .email {
         padding: 5px 10px;
+        width: 37%;
+        font-size: 14px;
+
     }
 
     label {
@@ -429,8 +396,18 @@
     }
 
     .about_num {
-        font-size: 14px;
+        font-size: 17px;
         padding: 9px 16px;
+    }
+
+    .about_title {
+        margin-top: 7px;
+        font-size: 18px;
+    }
+
+    .about_subtitle {
+        font-size: 17px;
+        margin-top: 9px;
     }
 
     /*accordion*/
@@ -442,21 +419,35 @@
         font-size: 14px;
     }
 
-    .vector {
-        padding: 6px;
+    .accordion_header {
+        font-size: 19px;
+        padding: 0 1em;
     }
 
     .accordion_content {
-        font-size: 13px;
+        font-size: 16px;
+        padding: 0 39px 10px;
+
     }
 
     /*footer*/
     .footer_inner {
         margin: 0;
+        padding: 1em 2em;
+
+    }
+
+    .footer_email {
+        font-size: 14px;
+        padding: 5px 10px;
+        width: 50%;
+
     }
 
     .footer_btn {
-        font-size: 12px;
+        font-size: 14px;
+        padding: 5px 25px;
+
     }
 
     .footer_img {
@@ -466,7 +457,11 @@
     }
 
     .social {
-        margin-bottom: 22px;
+
+    }
+
+    .social_icon:first-child {
+        padding-left: 0;
     }
 
     .fab {
@@ -477,20 +472,6 @@
 }
 
 @media (max-width: 625px) {
-    /*header*/
-    .header {
-        padding-top: 18px;
-
-    }
-
-    .logo_icon {
-        width: 13vw;
-    }
-
-    .header_nav {
-        font-size: 12px;
-    }
-
     /* intro*/
     .intro_btm {
         margin-top: 35px;
@@ -498,16 +479,20 @@
 
     .intro_title {
         text-align: center;
+        font-size: 44px;
+
     }
 
     .intro_subtitle {
         text-align: center;
-
+        font-size: 24px;
 
     }
 
     .intro_inner {
         padding: 0;
+        margin: 67px 0 61px;
+
     }
 
     .img_rocket {
@@ -522,6 +507,8 @@
 
     .timer {
         margin: 0;
+        padding: 15px 39px;
+
     }
 
     /*card*/
@@ -539,6 +526,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin: 13px 0 9px;
     }
 
     label {
@@ -552,24 +540,13 @@
         width: 80%;
         flex-direction: column;
         justify-content: center;
-        padding: 1em 1.5em;
+        padding: 1em 1.5em 0.5em;
 
-    }
 
-    .form_feedback {
-        margin: 0;
-    }
-
-    .form_main {
-        margin: 0;
-    }
-
-    .form_checkbox {
-        margin: 0;
     }
 
     .form_item {
-        padding: 0 25px;
+        padding: 0;
         align-items: center;
         width: 100%;
         margin: 0 auto;
@@ -585,9 +562,13 @@
         text-align: center;
     }
 
+    label {
+        display: unset;
+        margin: 0;
+    }
+
     .form_text {
         padding: 3px 11px;
-
     }
 
     .img_form {
@@ -599,7 +580,28 @@
         width: 60%;
     }
 
-    /*about*/
+    .form_feedback {
+        margin: 0;
+    }
+
+    .form_main {
+        width: 89%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .name, .email {
+        padding: 6px 17px;
+        font-size: 15px;
+    }
+
+    .form_checkbox {
+        margin: 0;
+    }
+
+
+    /*about***************/
     .about_inner {
         background-size: 314%;
     }
@@ -608,24 +610,33 @@
         grid-column-start: 4;
         grid-row-start: 1;
         grid-column-end: 9;
+
     }
 
     .about_item_2 {
         grid-column-start: 1;
         grid-column-end: 6;
         grid-row-start: 2;
+
     }
 
     .about_item_3 {
         grid-column-start: 4;
         grid-column-end: 9;
         grid-row-start: 3;
+
     }
 
     .about_item_4 {
         grid-column-start: 2;
         grid-column-end: 7;
         grid-row-start: 5;
+    }
+
+    .about_item_2,
+    .about_item_3,
+    .about_item_4 {
+        margin-top: 28px;
     }
 
 
@@ -640,23 +651,21 @@
     }
 
     .footer_email {
-        width: 100%;
-        margin-bottom: 15px;
+        width: 57%;
     }
-
-    .checkbox {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    input[type=checkbox i]{
+        margin: 0;
     }
-
     .footer_img {
         display: none;
     }
 
     .social {
         justify-content: center;
-        margin-bottom: 10px;
+    }
+    .fa{
+        font-size: 20px;
+
     }
 
 }

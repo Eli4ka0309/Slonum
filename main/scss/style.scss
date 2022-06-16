@@ -55,7 +55,7 @@ body {
 
 .header.fixed {
   background-color: white;
-  box-shadow: $boxShadowGrey;
+  box-shadow: 0px 0px 65px rgb(128 128 128 / 26%);
   position: fixed;
   top: 0;
   left: 0;
@@ -73,7 +73,8 @@ body {
 
 .logo_icon {
   background: radial-gradient(circle closest-corner at 23% 44%, $bgColorGrin -20%, transparent 73%);
-
+  width: 100%;
+  max-width: 111px;
 }
 
 .header_nav {
@@ -223,7 +224,6 @@ body {
 
 .timer_items {
   display: flex;
-  font-size: 20px;
   font-weight: 900;
   margin-top: 10px;
 
@@ -252,7 +252,7 @@ body {
   box-shadow: $boxShadowYellow;
 }
 
-.timer_days {
+.timer_days:first-child {
   margin-left: 0;
 }
 
@@ -570,11 +570,6 @@ input:-webkit-autofill {
 
 }
 
-.active {
-
-
-}
-
 .accordion_content {
   display: none;
   font-size: 18px;
@@ -627,12 +622,12 @@ input:-webkit-autofill {
 
 .footer_email {
   font-size: 18px;
-  padding: 8px 0 8px 15px;
+  padding: 8px 13px;
   background: #b8eb59;
   box-shadow: $boxShadowGrin;
   border: 1px solid rgb(125, 159, 56);
   border-radius: $bordRad;
-  width: 40%;
+  width: 45%;
 
 }
 
@@ -679,6 +674,11 @@ input:-webkit-autofill {
   max-height: 400px;
 }
 
+input[type="checkbox" i] {
+  margin: 25px 8px 7px 4px;
+
+}
+
 .checkbox {
   margin-top: 1em;
 }
@@ -689,9 +689,17 @@ input:-webkit-autofill {
 
 }
 
+.social_icon {
+  margin-left: 10px;
+
+}
+
+.social_icon:first-child {
+  margin-left: 0;
+}
+
 .fa {
   font-size: 28px;
-  padding-left: 15px;
   color: rgba(0, 0, 0, 0.66);
 }
 
