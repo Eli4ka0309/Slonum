@@ -421,7 +421,6 @@
 
     .accordion_header {
         font-size: 19px;
-        padding: 0 1em;
     }
 
     .accordion_content {
@@ -652,10 +651,13 @@
 
     .footer_email {
         width: 57%;
+
     }
-    input[type=checkbox i]{
+
+    input[type=checkbox i] {
         margin: 0;
     }
+
     .footer_img {
         display: none;
     }
@@ -663,7 +665,8 @@
     .social {
         justify-content: center;
     }
-    .fa{
+
+    .fa {
         font-size: 20px;
 
     }
@@ -671,6 +674,44 @@
 }
 
 @media (max-width: 425px ) {
+    .section_title {
+        font-size: 28px;
+    }
+
+    .section_advant {
+        padding: 0 0 61px;
+    }
+
+    /*accordion*/
+    .accordion_header {
+        font-size: 15px;
+        padding: 10px 0;
+
+    }
+
+    .accordion_header:after {
+        content: "➕";
+        font-size: 17px;
+    }
+
+
+    .form_inner, .footer_inner {
+        width: 100%;
+    }
+
+    .form_main {
+        width: 70%;
+    }
+
+    .name, .email {
+        width: 100%;
+    }
+
+    input[type=checkbox i] {
+        margin: 10px 8px 7px 4px;
+    }
+
+
     .footer_inner {
         margin: 0;
         width: 100%;
